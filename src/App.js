@@ -5,10 +5,10 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="app">
-        <nav className="top-nav">
+      <div className="App">
+        <nav className="Top-nav">
           <img src={logo} className="purpose-logo" alt="Purpose-group-logo" />
-          <div className='nav-bar'>  
+          <div className='Nav-bar'>  
             <h1 className='nav-item-active'>HOME</h1>
             <h1 className='nav-item'>LOCATION</h1>
             <h1 className='nav-item'>HOW IT WORKS</h1>
