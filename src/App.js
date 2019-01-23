@@ -7,7 +7,12 @@ class App extends Component {
     return (
       <div className="App">
         <nav className="App-nav">
-          <img src={logo} className="Purpose-logo" alt="logo" />
+          <img src={logo} className="Purpose-logo" alt="Purpose-group-logo" />
+          <div>HOME</div>
+          <div>LOCATION</div>
+          <div>HOW IT WORKS</div>
+          <div>LANDLORDS</div>
+          <div>CONTACT</div>
         </nav>
       </div>
     );
