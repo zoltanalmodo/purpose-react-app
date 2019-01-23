@@ -5,14 +5,16 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <nav className="App-nav">
-          <img src={logo} className="Purpose-logo" alt="Purpose-group-logo" />
-          <div>HOME</div>
-          <div>LOCATION</div>
-          <div>HOW IT WORKS</div>
-          <div>LANDLORDS</div>
-          <div>CONTACT</div>
+      <div className="app">
+        <nav className="top-nav">
+          <img src={logo} className="purpose-logo" alt="Purpose-group-logo" />
+          <div className='nav-bar'>  
+            <h1 className='nav-item-active'>HOME</h1>
+            <h1 className='nav-item'>LOCATION</h1>
+            <h1 className='nav-item'>HOW IT WORKS</h1>
+            <h1 className='nav-item'>LANDLORDS</h1>
+            <h1 className='nav-item'>CONTACT</h1>
+          </div>  
         </nav>
       </div>
     );
