@@ -53,14 +53,8 @@
 }
 
 .NavItem:hover {
-  cursor: pointer;
   color: #fff;
 	background-color: #c7c7c7
-}
-
-.NavItemActive {
-  cursor: pointer;
-  background-color: #ffff00;
 }
 
 /* ==================================================================================
