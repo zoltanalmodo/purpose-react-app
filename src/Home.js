@@ -35,6 +35,8 @@ class Gallery extends React.Component {
 
     const handleOnDragStart = e => e.preventDefault()
 
+//alice carousel = working
+
     return (
       <AliceCarousel
         duration={400}
