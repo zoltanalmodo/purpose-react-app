@@ -1,5 +1,5 @@
 import React from 'react';
-import TopNav from './TopNav';
+import TopNav from '../TopNav/TopNav';
 
 export default function Contact() {
   return (
@@ -7,5 +7,5 @@ export default function Contact() {
       <TopNav />
       <h1><br></br>CONTACT content</h1>
     </div>
-  );
+  )
 }

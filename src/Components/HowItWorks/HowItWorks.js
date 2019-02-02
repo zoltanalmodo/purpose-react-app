@@ -1,5 +1,5 @@
 import React from 'react';
-import TopNav from './TopNav';
+import TopNav from '../TopNav/TopNav';
 
 export default function HowItWorks() {
   return (

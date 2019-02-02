@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from './NavBar.js'
+import NavBar from '../NavBar/NavBar.js'
 import logo from './images/purpose-group-logo.png';
 
 export default function TopNav() {

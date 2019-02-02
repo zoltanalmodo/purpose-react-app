@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Location from './Location';
-import HowItWorks from './HowItWorks';
-import Landlords from './Landlords';
-import Contact from './Contact';
-import Home from './Home';
+
+import Locations from './Components/Locations/Locations';
+import HowItWorks from './Components/HowItWorks/HowItWorks';
+import Landlords from './Components/Landlords/Landlords';
+import Contact from './Components/Contact/Contact';
+import Home from './Components/Home/Home';
 import './App.css';
 
 class App extends Component {
@@ -12,8 +13,8 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Route exact path='/Home' component={Home} />
-          <Route exact path='/Location' component={Location} />
+          <Route exact path='/' component={Home} />
+          <Route exact path='/Locations' component={Locations} />
           <Route exact path='/How-it-works' component={HowItWorks} />
           <Route exact path='/Landlords' component={Landlords} />
           <Route exact path='/Contact' component={Contact} />
@@ -22,9 +23,5 @@ class App extends Component {
     )
   }
 }
-
-
-
-
 
 export default App;
