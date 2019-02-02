@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function NavBar() {
     return (
-        <div className='NavBar'>
+        <div className='NavBar' id='NavBar'>
 
             <NavLink exact to='/' className='NavItem' activeStyle={
                     { backgroundColor: '#ffff00' }

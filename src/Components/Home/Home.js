@@ -1,14 +1,19 @@
-import React from 'react';
+import React from 'react'
 
-import TopNav from '../TopNav/TopNav';
-import Gallery001 from '../Gallery001/Gallery001';
+import TopNav from '../TopNav/TopNav'
+import Gallery001 from '../Gallery001/Gallery001'
+import Footer from '../Footer/Footer'
+import Copyright from '../Copyright/Copyright'
+
 
 export default function Home() {
   return (
     <div>
       <TopNav />
       <Gallery001 />
-      <h1><br></br>HOME content</h1>
+
+      <Footer />
+      <Copyright />
     </div>
   )
 }

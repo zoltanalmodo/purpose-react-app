@@ -47,10 +47,10 @@ export default class Gallery001 extends React.Component {
           onSlideChanged={this.onSlideChanged}
         >
   
-          <img src={image_001} onDragStart={handleOnDragStart} className="yours-custom-class" alt='img1'/>
-          <img src={image_002} onDragStart={handleOnDragStart} className="yours-custom-class" alt='img2'/>
-          <img src={image_003} onDragStart={handleOnDragStart} className="yours-custom-class" alt='img3'/>
-          <img src={image_004} onDragStart={handleOnDragStart} className="yours-custom-class" alt='img4'/>
+          <img src={image_001} onDragStart={handleOnDragStart} className="Gallery001" alt='img1'/>
+          <img src={image_002} onDragStart={handleOnDragStart} className="Gallery001" alt='img2'/>
+          <img src={image_003} onDragStart={handleOnDragStart} className="Gallery001" alt='img3'/>
+          <img src={image_004} onDragStart={handleOnDragStart} className="Gallery001" alt='img4'/>
   
         </AliceCarousel>
       );
