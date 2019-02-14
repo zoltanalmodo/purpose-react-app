@@ -40,7 +40,7 @@ export default class Gallery001 extends React.Component {
           mouseDragEnabled={true}
           playButtonEnabled={false}
           responsive={responsive}
-          autoPlayInterval={9000}
+          autoPlayInterval={6000}
           autoPlayDirection="ltr"
           autoPlayActionDisabled={true}
           onSlideChange={this.onSlideChange}

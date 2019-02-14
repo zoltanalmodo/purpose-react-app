@@ -221,12 +221,14 @@ select {
   text-align: center;
 }
 
+
+
 /* ==================================================================================
 			GENERAL SETTINGS (END)
 ================================================================================== */
 
 /* ==================================================================================
-			NAVIGATION SETTINGS (START)
+			COMPONENTS SETTINGS (START)
 ================================================================================== */
 
 .purpose-logo {
@@ -258,10 +260,234 @@ select {
 
 .NavItem:hover {
   color: #fff;
-	background-color: #c7c7c7
+	background-color: #c7c7c7;
+}
+
+.Gallery001 {
+  width: 100%;
+}
+
+.SearchOnGoogleMap {
+  display: flex;
+  height: 656.4px;
+  width: 100%;
+}
+
+/* ==================================================================================
+			SEARCH FIELD (START)
+================================================================================== */
+
+.SearchBar {
+  position: absolute;
+	width: 100%;
+	height: 88px;
+	border: 28px solid #ffff00;
+	border-radius: 0;
+	background-color: #fff;
+  z-index: 1;
+  top: -88px;
+}
+
+.SearchBar input[type=text] {
+	font-size: 17px;
+	border: 1px solid rgb(201, 201, 201);
+	border-right: none; /* Prevent double borders */
+	border-radius: 0;
+	float: left;
+  width: 80%;
+	height: 32px;
+	background: #fff;
+	margin: 0;
+}
+
+.SearchBar button[type=submit] {
+	float: left;
+	width: 20%;
+	height: 32px;
+	background: rgb(77, 77, 77);
+	color: #fff;
+	font-size: 17px;
+	border: 1px solid black;
+	border-radius: 0;
+	cursor: pointer;
+}
+
+.SearchBar button:hover {
+	background: #141414;
+}
+
+/* Clear floats */
+.SearchBar::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* ==================================================================================
+			SEARCH FIELD (END)
+================================================================================== */
+
+.SearchPanel {
+  position: relative;
+  width: 33.3%;
+  height: 656.4px;
+  z-index: 1;
+}
+
+.GoogleMapSearch {
+  height: 656.4px;
+  width: 66.6%;
+  left: 33.3%;
+}
+
+.SearchResults {
+  display: flex;
+  width: 100%;
+}
+
+.SearchResults img {
+  height: 100%;
+}
+
+.SearchResultPanel {
+  text-align: left;
+  height: 100%;
+  width: 50%;
+}
+
+.SearchResult {
+  display: flex;
+  height: 222px;
+  width: 100%;
+}
+
+.SearchResult:hover {
+  cursor: pointer;
+  background-color: #c7c7c7;
+}
+
+.purpose-group-searchresult-image {
+  height: 100%;
+  margin-left: 28px;
+}
+
+.SearchResultText {
+  margin-top: 28px;
+  margin-left: 28px;
+  margin-bottom: 28px;
+  margin-right: 28px;
+}
+
+.GoogleMapResult {
+  height: 666px;
+}
+
+.purpose-group-googlemapresult-image {
+  height: 100%;
+}
+
+.Gallery002 {
+  width: 100%;
+}
+
+.FloorPlanBlock {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.FloorPlanBlock img {
+  height: 100%;
+}
+
+.FloorPlanPanel {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 33.3%;
+  background-color: #ffff00;
+  padding: 28px;
+}
+
+.FloorPlanPanelTitle {
+  position: absolute;
+  z-index: 1;
+  top: -46px;
+	width: 33.3%;
+  height: 74px;
+  background-color: #ffff00;
+  
+	border-top: 28px solid #ffff00;
+  border-right: 28px solid #ffff00;
+  border-bottom: 28px solid #ffff00;
+  border-left: 28px solid #ffff00;
+}
+
+.FloorPlanPanelSelector {
+  position: relative;
+  display: flex;
+  width: 100%;
+
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.SelectorButton {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 20px;
+  padding-right: 2%;
+  padding-bottom: 18px;
+  padding-left: 2%;
+}
+
+.SelectorButton:hover {
+  cursor: pointer;
+	background-color: #c7c7c7;
+}
+
+.SelectorButton:active {
+  background-color: #ffff00;
+  border-bottom: 0px;
+}
+
+.FloorPlanPanelText {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #ffff00;
+
+  padding-top: 28px;
+  padding-right: 28px;
+  padding-bottom: 28px;
+  padding-left: 28px;
+
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.FloorPlanPanelPrice {
+  position: absolute;
+  bottom: 0px;
+  background-color: #ffff00;
+  padding-bottom: 56px;
+}
+
+.FloorPlanDrawing {
+  width: 66.6%;
+  left: 33.3%;
+}
+
+.Footer {
+  width: 100%;
 }
 
 .Copyright {
+  z-index: 2;
   width: 100%;
   height: 26px;
   background: #000;
@@ -269,21 +495,14 @@ select {
   position: fixed;
 }
 
-.Footer {
-  width: 100%;
-}
-
-.Gallery001 {
-  width: 100%;
-}
-
 /* ==================================================================================
-			NAVIGATION SETTINGS (START)
+			COMPONENTS SETTINGS (START)
 ================================================================================== */
 
 /* ==================================================================================
 			TYPE SETTINGS (START)
 ================================================================================== */
+
 h1 {
   font-family: 'Akkurat-Mono', Fallback, sans-serif;
   text-align: center;
@@ -308,5 +527,53 @@ h1 {
     margin-block-end: 0px;
     padding-top: 7px;
     padding-left: 5%;
+}
+
+.FloorPlanPanelPrice h1 {
+  font-family: 'Akkurat-Mono', Fallback, sans-serif;
+  text-align: left;
+	font-size: 20px;
+	letter-spacing: 6px;
+	color: #000;
+	font-weight: normal;
+  text-decoration: none;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+h2 {
+  font-family: 'Akkurat-Mono', Fallback, sans-serif;
+  text-align: left;
+	font-size: 24px;
+	letter-spacing: 3px;
+	color: #000;
+	font-weight: normal;
+  text-decoration: none;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+h3 {
+  font-family: 'Akkurat-Mono', Fallback, sans-serif;
+  text-align: left;
+	font-size: 16px;
+	letter-spacing: 2px;
+	color: #000;
+	font-weight: normal;
+  text-decoration: none;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+p {
+  font-family: 'Akkurat-Mono', Fallback, sans-serif;
+  text-align: left;
+	font-size: 14px;
+	letter-spacing: 2px;
+	color: #000;
+	font-weight: normal;
+  text-decoration: none;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
 }
   
