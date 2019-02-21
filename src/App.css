@@ -450,7 +450,7 @@ select {
 }
 
 .SelectorButton:active {
-  background-color: #ffff00;
+  background-color: red;
   border-bottom: 0px;
 }
 
