@@ -222,7 +222,6 @@ select {
 }
 
 
-
 /* ==================================================================================
 			GENERAL SETTINGS (END)
 ================================================================================== */
@@ -423,36 +422,52 @@ select {
   border-left: 28px solid #ffff00;
 }
 
+
+/* -------------- new new new -------------- */
+
+
 .FloorPlanPanelSelector {
   position: relative;
   display: flex;
   width: 100%;
+  cursor: pointer;
 
+  /* border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black; */
+}
+
+.activeButton {
+  width: 100%;
+  background-color: yellow;
+  text-align: center;
+  padding-top: 20px;
+  padding-right: 2%;
+  padding-bottom: 18px;
+  padding-left: 2%;
   border-top: 1px solid black;
   border-right: 1px solid black;
   border-left: 1px solid black;
 }
 
-.SelectorButton {
-  background-color: white;
+.passiveButton{
   width: 100%;
+	color: red;
+  background-color: white;
   text-align: center;
   text-decoration: none;
   padding-top: 20px;
   padding-right: 2%;
   padding-bottom: 18px;
   padding-left: 2%;
+  border-bottom: 1px solid black;
 }
 
-.SelectorButton:hover {
-  cursor: pointer;
-	background-color: #c7c7c7;
+.passiveButton:hover{
+  background-color: #c7c7c7;
 }
 
-.SelectorButton:active {
-  background-color: red;
-  border-bottom: 0px;
-}
+/* --------------=old=-------------- */
 
 .FloorPlanPanelText {
   position: relative;
@@ -515,19 +530,18 @@ h1 {
   margin-block-end: 0px;
 }
 
-.SelectorButton h1 {
+h1.SelectorButton {
   font-family: 'Akkurat-Mono', Fallback, sans-serif;
   text-align: center;
-	font-size: 18px;
+  font-size: 18px;
 	letter-spacing: 6px;
-	color: #000;
 	font-weight: normal;
   text-decoration: none;
   margin-block-start: 0px;
   margin-block-end: 0px;
 }
 
-.FloorPlanPanelPrice h1 {
+h1.FloorPlanPanelPrice {
   font-family: 'Akkurat-Mono', Fallback, sans-serif;
   text-align: left;
 	font-size: 20px;
@@ -539,7 +553,7 @@ h1 {
   margin-block-end: 0px;
 }
 
-.Copyright h1 {
+h1.Copyright {
     font-family: 'Akkurat-Mono', Fallback, sans-serif;
     text-align: left;
     font-size: 15px;

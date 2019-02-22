@@ -1,52 +1,7 @@
 import React, { Component } from 'react';
-
-// import SelectorButton from './SelectorButton/SelectorButton'
-
-// export default class FloorPlanPanelSelector extends Component {
-
-//     constructor() {
-//         super();
-//         this.state = { selectedButton: '...' };
-//         console.log('hello constructor');
-//     }
-
-//     setSelectedButton(buttonName) {
-//         this.setState({ selectedButton: buttonName });
-//     }
+import '../../App.css';
 
 
-//     render() {
-//         return (
-//             <div className='FloorPlanPanelSelector'
-//                 id='FloorPlanPanelSelector'>
-
-//                 <h1>{this.state.selectedButton}</h1>
-
-//                 <SelectorButton
-//                     name='Media'
-//                     onButtonSelected={(buttonName) =>
-//                         this.setSelectedButton(buttonName)}
-//                 />
-//                 <SelectorButton
-//                     name='Office'
-//                     onButtonSelected={(buttonName) =>
-//                         this.setSelectedButton(buttonName)}
-//                 />
-//                 <SelectorButton
-//                     name='Open'
-//                     onButtonSelected={(buttonName) =>
-//                         this.setSelectedButton(buttonName)}
-//                 />
-
-//             </div>
-//         );
-//     }
-// }
-
-
-// NEW NEW NEW
-
-import './App.css';
 
 export default class FloorPlanPanelSelector extends Component {
   constructor(){
@@ -86,18 +41,20 @@ export default class FloorPlanPanelSelector extends Component {
       let Button_3_class = this.state.Button_3 ? "activeButton" : "passiveButton";
 
       return (
-        <div className='ButtonNav'>
+        <div className='FloorPlanPanelSelector'>
+            
 
-           <div className={Button_1_class} onClick={this.changeColor_1.bind(this)}>
-                Button 1
-           </div>
-           <div className={Button_2_class} onClick={this.changeColor_2.bind(this)}>
-                Button 2
-           </div>
-           <div className={Button_3_class} onClick={this.changeColor_3.bind(this)}>
-                Button 3
-           </div>
+            <div className={Button_1_class} onClick={this.changeColor_1.bind(this)}>
+                    <h1 className='SelectorButton' >Media</h1>
+            </div>
+            <div className={Button_2_class} onClick={this.changeColor_2.bind(this)}>
+                    <h1 className='SelectorButton' >Office</h1>
+            </div>
+            <div className={Button_3_class} onClick={this.changeColor_3.bind(this)}>
+                    <h1 className='SelectorButton' >Open</h1>
+            </div>
 
+            
         </div>
       )
   }
