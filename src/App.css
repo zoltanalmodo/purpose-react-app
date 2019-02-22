@@ -226,9 +226,7 @@ select {
 			GENERAL SETTINGS (END)
 ================================================================================== */
 
-/* ==================================================================================
-			COMPONENTS SETTINGS (START)
-================================================================================== */
+/* === COMPONENTS SETTINGS (START) =============================================== */
 
 .purpose-logo {
   margin-left: 6%;
@@ -272,9 +270,7 @@ select {
   width: 100%;
 }
 
-/* ==================================================================================
-			SEARCH FIELD (START)
-================================================================================== */
+/* === SEARCH FIELD (START) ====================================================== */
 
 .SearchBar {
   position: absolute;
@@ -322,9 +318,9 @@ select {
 	display: table;
 }
 
-/* ==================================================================================
-			SEARCH FIELD (END)
-================================================================================== */
+/* === SEARCH FIELD (END) ======================================================== */
+
+/* === SEARCH Result BLOCK (START) =============================================== */
 
 .SearchPanel {
   position: relative;
@@ -354,13 +350,20 @@ select {
   width: 50%;
 }
 
-.SearchResult {
+.SearchResultActive {
+  display: flex;
+  height: 222px;
+  width: 100%;
+  background-color: yellow;
+}
+
+.SearchResultPassive {
   display: flex;
   height: 222px;
   width: 100%;
 }
 
-.SearchResult:hover {
+.SearchResultPassive:hover {
   cursor: pointer;
   background-color: #c7c7c7;
 }
@@ -385,9 +388,17 @@ select {
   height: 100%;
 }
 
+/* === SEARCH Result BLOCK (END) ================================================= */
+
+/* ==== SEARCH  Result CAROUSEL (START) ========================================== */
+
 .Gallery002 {
   width: 100%;
 }
+
+/* === SEARCH  Result CAROUSEL (END) ============================================= */
+
+/* === FLOOR PLAN BLOCK (START) ================================================== */
 
 .FloorPlanBlock {
   position: relative;
@@ -431,10 +442,6 @@ select {
   display: flex;
   width: 100%;
   cursor: pointer;
-
-  /* border-top: 1px solid black;
-  border-right: 1px solid black;
-  border-left: 1px solid black; */
 }
 
 .activeButton {
@@ -452,7 +459,6 @@ select {
 
 .passiveButton{
   width: 100%;
-	color: red;
   background-color: white;
   text-align: center;
   text-decoration: none;
@@ -466,8 +472,6 @@ select {
 .passiveButton:hover{
   background-color: #c7c7c7;
 }
-
-/* --------------=old=-------------- */
 
 .FloorPlanPanelText {
   position: relative;
@@ -497,6 +501,10 @@ select {
   left: 33.3%;
 }
 
+/* === FLOOR PLAN BLOCK (END) ==================================================== */
+
+/* === FOOTER (START) ============================================================ */
+
 .Footer {
   width: 100%;
 }
@@ -510,8 +518,10 @@ select {
   position: fixed;
 }
 
+/* === FOOTER (START) ============================================================ */
+
 /* ==================================================================================
-			COMPONENTS SETTINGS (START)
+			COMPONENTS SETTINGS (END)
 ================================================================================== */
 
 /* ==================================================================================
@@ -602,4 +612,8 @@ p {
   margin-block-start: 0px;
   margin-block-end: 0px;
 }
+
+/* ==================================================================================
+			TYPE SETTINGS (END)
+================================================================================== */
   
