@@ -30,6 +30,11 @@ export default function NavBar() {
                 }><h1>CONTACT</h1>
             </NavLink>
 
+            <NavLink exact to='/Radio' className='NavItem' activeStyle={
+                    { backgroundColor: '#ffff00' }
+                }><h1 style={ { color: 'red' }}>RADIO</h1>
+            </NavLink>
+
         </div>
     )
 }
