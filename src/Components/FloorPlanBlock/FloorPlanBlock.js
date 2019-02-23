@@ -7,7 +7,7 @@ import FloorPlanDrawing from '../FloorPlanDrawing/FloorPlanDrawing'
 export default function FloorPlanBlock() {
     return (
         <div className='FloorPlanBlock'>
-            <FloorPlanPanelTitle />
+            <FloorPlanPanelTitle title='Bethnal Green'/>
             <FloorPlanPanel />
             <FloorPlanDrawing />
         </div>

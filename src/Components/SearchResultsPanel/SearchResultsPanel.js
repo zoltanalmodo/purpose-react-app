@@ -70,19 +70,34 @@ class SearchResultsPanel extends React.Component {
                 <img src={searchresult_image}
                     className="purpose-group-searchresult-image"
                     alt="purpose-group-searchresult" />
-                <SearchResultText />
+                <SearchResultText
+                    title='Bethnal Green'
+                    type='Office'
+                    short_description='Short description'
+                    long_description='Long Description long long long long long long 
+                    long long long long long long long long long long long' />
             </div>
             <div className={Button_2_class} onClick={this.changeColor_2.bind(this)}>
                 <img src={searchresult_image}
                     className="purpose-group-searchresult-image"
                     alt="purpose-group-searchresult" />
-                <SearchResultText />
+                <SearchResultText
+                    title='London Bridge'
+                    type='Office'
+                    short_description='Short description'
+                    long_description='Long Description long long long long long long 
+                    long long long long long long long long long long long' />
             </div>
             <div className={Button_3_class} onClick={this.changeColor_3.bind(this)}>
                 <img src={searchresult_image}
                     className="purpose-group-searchresult-image"
                     alt="purpose-group-searchresult" />
-                <SearchResultText />
+                <SearchResultText
+                    title='Bermondsey'
+                    type='Studio'
+                    short_description='Short description'
+                    long_description='Long Description long long long long long long 
+                    long long long long long long long long long long long' />
              </div>
   
           </div>

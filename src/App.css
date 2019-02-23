@@ -509,6 +509,8 @@ select {
   width: 100%;
 }
 
+/* === FOOTER (END) ============================================================== */
+
 .Copyright {
   z-index: 2;
   width: 100%;
@@ -518,7 +520,7 @@ select {
   position: fixed;
 }
 
-/* === FOOTER (START) ============================================================ */
+
 
 /* ==================================================================================
 			COMPONENTS SETTINGS (END)
@@ -528,7 +530,7 @@ select {
 			TYPE SETTINGS (START)
 ================================================================================== */
 
-h1 {
+h1.NavButton {
   font-family: 'Akkurat-Mono', Fallback, sans-serif;
   text-align: center;
 	font-size: 15px;
@@ -551,7 +553,7 @@ h1.SelectorButton {
   margin-block-end: 0px;
 }
 
-h1.FloorPlanPanelPrice {
+.FloorPlanPanelPrice h1 {
   font-family: 'Akkurat-Mono', Fallback, sans-serif;
   text-align: left;
 	font-size: 20px;
@@ -563,7 +565,7 @@ h1.FloorPlanPanelPrice {
   margin-block-end: 0px;
 }
 
-h1.Copyright {
+.Copyright h1 {
     font-family: 'Akkurat-Mono', Fallback, sans-serif;
     text-align: left;
     font-size: 15px;

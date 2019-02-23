@@ -1,17 +1,18 @@
 import React from 'react';
 
 
-export default function SearchResultText() {
+export default function SearchResultText(props) {
     return (
         <div className='SearchResultText'>
-            <h2>Bethnal Green</h2>
-            <br></br>
-            <h3>Office</h3>
-            <br></br>
-            <p>Sudhu a hud ausdasna ashi ubauisb a asduas asasd huj hsbbiap.
-                <br></br><br></br>
-                Hunjys j skaksodans sji asihdn siaias.
-            </p>
+        
+            <h2>{props.title}</h2>
+                <br></br>
+            <h3>{props.type}</h3>
+                <br></br>
+            <p>{props.short_description}</p>
+                <br></br>
+            <p>{props.long_description}</p>
+
         </div>
     )
 }
