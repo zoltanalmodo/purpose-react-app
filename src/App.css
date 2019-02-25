@@ -530,6 +530,18 @@ select {
 			TYPE SETTINGS (START)
 ================================================================================== */
 
+h1 {
+  font-family: 'Akkurat-Mono', Fallback, sans-serif;
+  text-align: center;
+	font-size: 15px;
+	letter-spacing: 6px;
+	color: #000;
+	font-weight: normal;
+  text-decoration: none;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
 h1.NavButton {
   font-family: 'Akkurat-Mono', Fallback, sans-serif;
   text-align: center;
