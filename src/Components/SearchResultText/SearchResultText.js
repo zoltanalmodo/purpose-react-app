@@ -7,8 +7,6 @@ export default function SearchResultText(props) {
         
             <h2>{props.title}</h2>
                 <br></br>
-            <h3>{props.type}</h3>
-                <br></br>
             <p>{props.short_description}</p>
                 <br></br>
             <p>{props.long_description}</p>
