@@ -1,12 +1,16 @@
 import React from 'react'
 
 import TopNav from '../TopNav/TopNav'
-import Gallery001 from '../Gallery001/Gallery001'
+import HomeGallery from './HomeGallery/HomeGallery'
 
-import SearchOnGoogleMap from '../SearchOnGoogleMap/SearchOnGoogleMap'
-import SearchResults from '../SearchResults/SearcResults'
-import Gallery002 from '../Gallery002/Gallery002'
-import FloorPlanBlock from '../FloorPlanBlock/FloorPlanBlock'
+import SearchOnGoogleMapContainer
+  from '../SearchOnGoogleMapContainer/SearchOnGoogleMapContainer'
+import SearchResultsContainer
+  from '../SearchResultsContainer/SearcResultsContainer'
+import SearchResultsGallery
+  from '../SearchResultsGallery/SearchResultsGallery'
+import FloorPlanContainer
+  from '../FloorPlanContainer/FloorPlanContainer'
 
 import Footer from '../Footer/Footer'
 import Copyright from '../Copyright/Copyright'
@@ -16,12 +20,13 @@ export default function Home() {
   return (
     <div>
       <TopNav />
-      <Gallery001 />
-      <SearchOnGoogleMap />
-      <SearchResults />
-      <Gallery002 />
+      <HomeGallery />
 
-      <FloorPlanBlock />
+      <SearchOnGoogleMapContainer />
+
+      <SearchResultsContainer />
+        <SearchResultsGallery />
+        <FloorPlanContainer />
       
       <Footer />
       <Copyright />

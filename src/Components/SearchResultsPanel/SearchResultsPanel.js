@@ -9,15 +9,6 @@ import searchresult_image_london_bridge
 import searchresult_image_bermondsey
     from './purpose-group-searchresult-bermondsey.png'
 
-// export default function SearchResultPanel() {
-//     return (
-//         <div className='SearchResultPanel'>
-//             <SearchResult />
-//             <SearchResult />
-//             <SearchResult />
-//         </div>
-//     )
-// }
 
 class SearchResultsPanel extends React.Component {
     constructor(){
@@ -51,7 +42,7 @@ class SearchResultsPanel extends React.Component {
        })
     }
    
-    render(){
+    render() {
         let Button_1_class = this.state.Button_1 ?
             "SearchResultActive" :
             "SearchResultPassive"

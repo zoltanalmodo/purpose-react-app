@@ -7,7 +7,7 @@ import FloorPlanDrawing from '../FloorPlanDrawing/FloorPlanDrawing'
 class App extends Component {
     render() {
         return (
-            <div className='FloorPlanBlock'>
+            <div className='FloorPlanContainer'>
                 <FloorPlanPanelTitle title = ''/>
                 <FloorPlanPanel />
                 <FloorPlanDrawing />

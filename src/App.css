@@ -204,7 +204,7 @@ select {
 ================================================================================== */
 
 /* ==================================================================================
-			GENERAL SETTINGS (START)
+			TYPE SETTINGS (START)
 ================================================================================== */
 
 @font-face {
@@ -216,319 +216,6 @@ select {
 		url('fonts/Akkurat-Mono.woff') format('woff'),
 		url('fonts/Akkurat-Mono.woff2') format('woff2');
 }
-
-.App {
-  text-align: center;
-}
-
-
-/* ==================================================================================
-			GENERAL SETTINGS (END)
-================================================================================== */
-
-/* === COMPONENTS SETTINGS (START) =============================================== */
-
-.purpose-logo {
-  margin-left: 6%;
-  margin-right: 6%;
-}
-
-.TopNav {
-  width: 100%;
-  display: flex;
-  background-color: #ffffff;
-  height: 52px;
-  color: black;
-}
-
-.NavBar {
-  display: flex;
-  width: 70%;
-}
-
-.NavItem {
-  text-align: center;
-  text-decoration: none;
-  padding-top: 20px;
-  padding-right: 2%;
-  padding-bottom: 18px;
-  padding-left: 2%;
-}
-
-.NavItem:hover {
-  color: #fff;
-	background-color: #c7c7c7;
-}
-
-.Gallery001 {
-  width: 100%;
-}
-
-.SearchOnGoogleMap {
-  display: flex;
-  height: 656.4px;
-  width: 100%;
-}
-
-/* === SEARCH FIELD (START) ====================================================== */
-
-.SearchBar {
-  position: absolute;
-	width: 100%;
-	height: 88px;
-	border: 28px solid #ffff00;
-	border-radius: 0;
-	background-color: #fff;
-  z-index: 1;
-  top: -88px;
-}
-
-.SearchBar input[type=text] {
-	font-size: 17px;
-	border: 1px solid rgb(201, 201, 201);
-	border-right: none; /* Prevent double borders */
-	border-radius: 0;
-	float: left;
-  width: 80%;
-	height: 32px;
-	background: #fff;
-	margin: 0;
-}
-
-.SearchBar button[type=submit] {
-	float: left;
-	width: 20%;
-	height: 32px;
-	background: rgb(77, 77, 77);
-	color: #fff;
-	font-size: 17px;
-	border: 1px solid black;
-	border-radius: 0;
-	cursor: pointer;
-}
-
-.SearchBar button:hover {
-	background: #141414;
-}
-
-/* Clear floats */
-.SearchBar::after {
-	content: "";
-	clear: both;
-	display: table;
-}
-
-/* === SEARCH FIELD (END) ======================================================== */
-
-/* === SEARCH Result BLOCK (START) =============================================== */
-
-.SearchPanel {
-  position: relative;
-  width: 33.3%;
-  height: 656.4px;
-  z-index: 1;
-}
-
-.GoogleMapSearch {
-  height: 656.4px;
-  width: 66.6%;
-  left: 33.3%;
-}
-
-.SearchResults {
-  display: flex;
-  width: 100%;
-}
-
-.SearchResults img {
-  height: 100%;
-}
-
-.SearchResultPanel {
-  text-align: left;
-  height: 100%;
-  width: 50%;
-}
-
-.SearchResultActive {
-  display: flex;
-  height: 222px;
-  width: 100%;
-  background-color: yellow;
-}
-
-.SearchResultPassive {
-  display: flex;
-  height: 222px;
-  width: 100%;
-}
-
-.SearchResultPassive:hover {
-  cursor: pointer;
-  background-color: #c7c7c7;
-}
-
-.purpose-group-searchresult-image {
-  height: 100%;
-  margin-left: 28px;
-}
-
-.SearchResultText {
-  margin-top: 28px;
-  margin-left: 28px;
-  margin-bottom: 28px;
-  margin-right: 28px;
-}
-
-.GoogleMapResult {
-  height: 666px;
-}
-
-.purpose-group-googlemapresult-image {
-  height: 100%;
-}
-
-/* === SEARCH Result BLOCK (END) ================================================= */
-
-/* ==== SEARCH  Result CAROUSEL (START) ========================================== */
-
-.Gallery002 {
-  width: 100%;
-}
-
-/* === SEARCH  Result CAROUSEL (END) ============================================= */
-
-/* === FLOOR PLAN BLOCK (START) ================================================== */
-
-.FloorPlanBlock {
-  position: relative;
-  display: flex;
-  width: 100%;
-}
-
-.FloorPlanBlock img {
-  height: 100%;
-}
-
-.FloorPlanPanel {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 33.3%;
-  background-color: #ffff00;
-  padding: 28px;
-}
-
-.FloorPlanPanelTitle {
-  position: absolute;
-  z-index: 1;
-  top: -46px;
-	width: 33.3%;
-  height: 74px;
-  background-color: #ffff00;
-  
-	border-top: 28px solid #ffff00;
-  border-right: 28px solid #ffff00;
-  border-bottom: 28px solid #ffff00;
-  border-left: 28px solid #ffff00;
-}
-
-
-/* -------------- new new new -------------- */
-
-
-.FloorPlanPanelSelector {
-  position: relative;
-  display: flex;
-  width: 100%;
-  cursor: pointer;
-}
-
-.activeButton {
-  width: 100%;
-  background-color: yellow;
-  text-align: center;
-  padding-top: 20px;
-  padding-right: 2%;
-  padding-bottom: 18px;
-  padding-left: 2%;
-  border-top: 1px solid black;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
-}
-
-.passiveButton{
-  width: 100%;
-  background-color: white;
-  text-align: center;
-  text-decoration: none;
-  padding-top: 20px;
-  padding-right: 2%;
-  padding-bottom: 18px;
-  padding-left: 2%;
-  border-bottom: 1px solid black;
-}
-
-.passiveButton:hover{
-  background-color: #c7c7c7;
-}
-
-.FloorPlanPanelText {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-color: #ffff00;
-
-  padding-top: 28px;
-  padding-right: 28px;
-  padding-bottom: 28px;
-  padding-left: 28px;
-
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-}
-
-.FloorPlanPanelPrice {
-  position: absolute;
-  bottom: 0px;
-  background-color: #ffff00;
-  padding-bottom: 56px;
-}
-
-.FloorPlanDrawing {
-  width: 66.6%;
-  left: 33.3%;
-}
-
-/* === FLOOR PLAN BLOCK (END) ==================================================== */
-
-/* === FOOTER (START) ============================================================ */
-
-.Footer {
-  width: 100%;
-}
-
-/* === FOOTER (END) ============================================================== */
-
-.Copyright {
-  z-index: 2;
-  width: 100%;
-  height: 26px;
-  background: #000;
-  bottom: 0;
-  position: fixed;
-}
-
-
-
-/* ==================================================================================
-			COMPONENTS SETTINGS (END)
-================================================================================== */
-
-/* ==================================================================================
-			TYPE SETTINGS (START)
-================================================================================== */
 
 h1 {
   font-family: 'Akkurat-Mono', Fallback, sans-serif;
@@ -630,4 +317,326 @@ p {
 /* ==================================================================================
 			TYPE SETTINGS (END)
 ================================================================================== */
+
+/* ==================================================================================
+			GENERAL SETTINGS (START)
+================================================================================== */
+
+.App {
+  text-align: center;
+}
+
+/* ==================================================================================
+			GENERAL SETTINGS (END)
+================================================================================== */
+
+/* ==================================================================================
+			COMPONENTS SETTINGS (START)
+================================================================================== */
+
+.purpose-logo {
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.TopNav {
+  width: 100%;
+  display: flex;
+  background-color: #ffffff;
+  height: 52px;
+  color: black;
+}
+
+.NavBar {
+  display: flex;
+  width: 70%;
+}
+
+.NavItem {
+  text-align: center;
+  text-decoration: none;
+  padding-top: 20px;
+  padding-right: 2%;
+  padding-bottom: 18px;
+  padding-left: 2%;
+}
+
+.NavItem:hover {
+  color: #fff;
+	background-color: #c7c7c7;
+}
+
+.Gallery001 {
+  width: 100%;
+}
+
+/* === SEARCH On Google Map Container (START) ==================================== */
+
+.SearchOnGoogleMapContainer {
+  display: flex;
+  height: 656.4px;
+  width: 100%;
+}
+
+/* === SEARCH On Google Map Container (END) ====================================== */
+
+/* === SEARCH Form (START) ======================================================= */
+
+.SearchInputForm {
+  position: absolute;
+	width: 100%;
+	height: 88px;
+	border: 28px solid #ffff00;
+	border-radius: 0;
+	background-color: #fff;
+  z-index: 1;
+  top: -88px;
+}
+
+.SearchInputForm input[type=text] {
+	font-size: 17px;
+	border: 1px solid rgb(201, 201, 201);
+	border-right: none; /* Prevent double borders */
+	border-radius: 0;
+	float: left;
+  width: 80%;
+	height: 32px;
+	background: #fff;
+	margin: 0;
+}
+
+.SearchInputForm button[type=submit] {
+	float: left;
+	width: 20%;
+	height: 32px;
+	background: rgb(77, 77, 77);
+	color: #fff;
+	font-size: 17px;
+	border: 1px solid black;
+	border-radius: 0;
+	cursor: pointer;
+}
+
+.SearchInputForm button:hover {
+	background: #141414;
+}
+
+/* Clear floats */
+.SearchInputForm::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* === Search Form (END) ========================================================= */
+
+/* === Search Results Container (START) ========================================== */
+
+.SearchPanel {
+  position: relative;
+  width: 33.3%;
+  height: 656.4px;
+  z-index: 1;
+}
+
+.GoogleMapSearch {
+  height: 656.4px;
+  width: 66.6%;
+  left: 33.3%;
+}
+
+.SearchResultsContainer {
+  display: flex;
+  width: 100%;
+}
+
+.SearchResults img {
+  height: 100%;
+}
+
+.SearchResultPanel {
+  text-align: left;
+  height: 100%;
+  width: 50%;
+}
+
+.SearchResultActive {
+  display: flex;
+  height: 222px;
+  width: 100%;
+  background-color: yellow;
+}
+
+.SearchResultPassive {
+  display: flex;
+  height: 222px;
+  width: 100%;
+}
+
+.SearchResultPassive:hover {
+  cursor: pointer;
+  background-color: #c7c7c7;
+}
+
+.purpose-group-searchresult-image {
+  height: 100%;
+  margin-left: 28px;
+}
+
+.SearchResultText {
+  margin-top: 28px;
+  margin-left: 28px;
+  margin-bottom: 28px;
+  margin-right: 28px;
+}
+
+.GoogleMapResult {
+  height: 666px;
+}
+
+.purpose-group-googlemapresult-image {
+  height: 100%;
+}
+
+/* === SEARCH Result BLOCK (END) ================================================= */
+
+/* === SEARCH  Result Gallery (START) ============================================ */
+
+.Gallery002 {
+  width: 100%;
+}
+
+/* === SEARCH  Result Gallery (END) ============================================== */
+
+/* === FLOOR Plan Container (START) ============================================== */
+
+.FloorPlanContainer {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.FloorPlanContainer img {
+  height: 100%;
+}
+
+.FloorPlanPanel {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 33.3%;
+  background-color: #ffff00;
+  padding: 28px;
+}
+
+.FloorPlanPanelTitle {
+  position: absolute;
+  z-index: 1;
+  top: -46px;
+	width: 33.3%;
+  height: 74px;
+  background-color: #ffff00;
+  
+	border-top: 28px solid #ffff00;
+  border-right: 28px solid #ffff00;
+  border-bottom: 28px solid #ffff00;
+  border-left: 28px solid #ffff00;
+}
+
+
+/* -------------- new new new -------------- */
+
+
+.FloorPlanPanelSelector {
+  position: relative;
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+}
+
+.activeButton {
+  width: 100%;
+  background-color: yellow;
+  text-align: center;
+  padding-top: 20px;
+  padding-right: 2%;
+  padding-bottom: 18px;
+  padding-left: 2%;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.passiveButton{
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 20px;
+  padding-right: 2%;
+  padding-bottom: 18px;
+  padding-left: 2%;
+  border-bottom: 1px solid black;
+}
+
+.passiveButton:hover{
+  background-color: #c7c7c7;
+}
+
+.FloorPlanPanelText {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #ffff00;
+
+  padding-top: 28px;
+  padding-right: 28px;
+  padding-bottom: 28px;
+  padding-left: 28px;
+
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.FloorPlanPanelPrice {
+  position: absolute;
+  bottom: 0px;
+  background-color: #ffff00;
+  padding-bottom: 56px;
+}
+
+.FloorPlanDrawing {
+  width: 66.6%;
+  left: 33.3%;
+}
+
+/* === FLOOR Plan Container (END) ================================================ */
+
+/* === FOOTER (START) ============================================================ */
+
+.Footer {
+  width: 100%;
+}
+
+/* === FOOTER (END) ============================================================== */
+
+
+/* === FOOTER (START) ============================================================ */
+
+.Copyright {
+  z-index: 2;
+  width: 100%;
+  height: 26px;
+  background: #000;
+  bottom: 0;
+  position: fixed;
+}
+
+/* === FOOTER (END) ============================================================== */
+
+/* ==================================================================================
+			COMPONENTS SETTINGS (END)
+================================================================================== */
+
   
