@@ -8,7 +8,7 @@ class App extends Component {
     render() {
         return (
             <div className='FloorPlanContainer'>
-                <FloorPlanPanelTitle title = ''/>
+                <FloorPlanPanelTitle title = 'Title'/>
                 <FloorPlanPanel />
                 <FloorPlanDrawing />
             </div>
