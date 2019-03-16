@@ -57,44 +57,49 @@ class SearchResultsPanel extends React.Component {
         ;
   
         return (
-          <div className='SearchResultPanel'>
+            <div className='SearchResultPanel'>
 
-            <div className={Button_1_class} onClick={this.changeColor_1.bind(this)}>
+                <div className={Button_1_class}
+                    onClick={this.changeColor_1.bind(this)}>
 
-                <SearchResultImage 
-                    searchresult_image = {searchresult_image_bethnal_green}/>
-                <SearchResultText
-                    title='BETHNAL GREEN'
-                    short_description='CAMBRIDGE HEATH ROAD'
-                    long_description='Our newest site 5 mins walk from Bethnal Green
-                    station, featuring 12000 sq. ft of affordable workspace, cafe,
-                    cultural space, courtyard & workshops.' />
+                    <SearchResultImage 
+                        searchresult_image = {searchresult_image_bethnal_green}/>
+                    <SearchResultText
+                        title='BETHNAL GREEN'
+                        short_description='CAMBRIDGE HEATH ROAD'
+                        long_description='Our newest site 5 mins walk from Bethnal
+                        Green station, featuring 12000 sq. ft of affordable
+                        workspace, cafe, cultural space, courtyard & workshops.' />
+                </div>
+
+                <div className={Button_2_class}
+                    onClick={this.changeColor_2.bind(this)}>
+
+                    <SearchResultImage 
+                        searchresult_image = {searchresult_image_london_bridge}/> 
+                    <SearchResultText
+                        title='LONDON BRIDGE'
+                        short_description='CAPITAL HOUSE'
+                        long_description='Located immediately adjacent to the newly
+                        redeveloped London Bridge Station and overlooking
+                        The Shard.' />
+                </div>
+
+                <div className={Button_3_class}
+                    onClick={this.changeColor_3.bind(this)}>
+
+                    <SearchResultImage 
+                        searchresult_image = {searchresult_image_bermondsey}/>
+                    <SearchResultText
+                        title='BERMONDSEY'
+                        short_description='MANY HANDS'
+                        long_description='Our Many Hands creative workspace in
+                        Bermondsey provides a huge array of studios for freelancers,
+                        artists, makers and start-ups as well as exhibition
+                        space.' />
+                </div>
+    
             </div>
-
-            <div className={Button_2_class} onClick={this.changeColor_2.bind(this)}>
-
-                <SearchResultImage 
-                    searchresult_image = {searchresult_image_london_bridge}/> 
-                <SearchResultText
-                    title='LONDON BRIDGE'
-                    short_description='CAPITAL HOUSE'
-                    long_description='Located immediately adjacent to the newly
-                    redeveloped London Bridge Station and overlooking The Shard.' />
-            </div>
-
-            <div className={Button_3_class} onClick={this.changeColor_3.bind(this)}>
-
-                <SearchResultImage 
-                    searchresult_image = {searchresult_image_bermondsey}/>
-                <SearchResultText
-                    title='BERMONDSEY'
-                    short_description='MANY HANDS'
-                    long_description='Our Many Hands creative workspace in Bermondsey
-                     provides a huge array of studios for freelancers, artists,
-                     makers and start-ups as well as exhibition space.' />
-             </div>
-  
-          </div>
         )
     }
   }
