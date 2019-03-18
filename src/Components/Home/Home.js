@@ -4,13 +4,13 @@ import TopNav from '../TopNav/TopNav'
 import HomeGallery from './HomeGallery/HomeGallery'
 
 import SearchOnGoogleMapContainer
-  from '../SearchOnGoogleMapContainer/SearchOnGoogleMapContainer'
+  from '../../Containers/SearchOnGoogleMapContainer/SearchOnGoogleMapContainer'
 import SearchResultsContainer
-  from '../SearchResultsContainer/SearcResultsContainer'
+  from '../../Containers/SearchResultsContainer/SearcResultsContainer'
 import SearchResultsGallery
-  from '../SearchResultsGallery/SearchResultsGallery'
+  from '../../Containers/SearchResultsContainer/SearchResultsGallery/SearchResultsGallery'
 import FloorPlanContainer
-  from '../FloorPlanContainer/FloorPlanContainer'
+  from '../../Containers/FloorPlanContainer/FloorPlanContainer'
 
 import Footer from '../Footer/Footer'
 import Copyright from '../Copyright/Copyright'

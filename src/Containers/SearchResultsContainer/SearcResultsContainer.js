@@ -1,18 +1,23 @@
 import React from 'react'
 
-import SearchResultImage from './SearchResultImage/SearchResultImage'
-import SearchResultText from '../SearchResultText/SearchResultText'
+import SearchResultImage from './SearchResultsPanel/SearchResultImage/SearchResultImage'
+import SearchResultText from './SearchResultText/SearchResultText'
 import SearchResultsGoogleMap 
-    from '../SearchResultsGoogleMap/SearchResultsGoogleMap'
+    from './SearchResultsGoogleMap/SearchResultsGoogleMap'
 
 import searchresult_image_bethnal_green
-    from './purpose-group-searchresult-bethnal-green.png'
+    from './SearchResultsPanel/purpose-group-searchresult-bethnal-green.png'
 import searchresult_image_london_bridge
-    from './purpose-group-searchresult-london-bridge.png'
+    from './SearchResultsPanel/purpose-group-searchresult-london-bridge.png'
 import searchresult_image_bermondsey
-    from './purpose-group-searchresult-bermondsey.png'
-import googlemapresult_image
-    from './purpose-group-googlemapresult.png'
+    from './SearchResultsPanel/purpose-group-searchresult-bermondsey.png'
+
+import purpose_group_googlemapresult_bermondsey
+    from './purpose-group-googlemapresult-bermondsey.png'
+import purpose_group_googlemapresult_bethnal_green
+    from './purpose-group-googlemapresult-bethnal-green.png'
+import purpose_group_googlemapresult_london_bridge
+    from './purpose-group-googlemapresult-london-bridge.png'
 
 
 class SearchResultsContainer extends React.Component {
@@ -60,6 +65,8 @@ class SearchResultsContainer extends React.Component {
             "SearchResultActive" :
             "SearchResultPassive"
         ;
+
+        
   
         return (
             <div className='SearchResultsContainer'>
@@ -108,7 +115,8 @@ class SearchResultsContainer extends React.Component {
 
                 </div>
                 <SearchResultsGoogleMap
-                    googlemapresult_image = {googlemapresult_image} />
+                    googlemapresult_image =
+                        {purpose_group_googlemapresult_bermondsey} />
 
             </div>
             

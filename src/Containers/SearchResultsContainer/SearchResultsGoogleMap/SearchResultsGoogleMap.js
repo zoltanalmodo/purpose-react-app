@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 export default function SearchResultsGoogleMap(props) {
     return (
         <div className='GoogleMapResult'>

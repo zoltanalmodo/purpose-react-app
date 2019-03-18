@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import '../../App.css';
-
-
 
 export default class FloorPlanPanelSelector extends Component {
   constructor(){
