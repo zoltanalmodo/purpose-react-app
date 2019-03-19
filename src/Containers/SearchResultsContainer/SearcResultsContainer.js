@@ -64,27 +64,27 @@ import sr_gallery_bermondsey_006
     from './SearchResultsGallery/img/sr-gallery-bermondsey-006.png'
 
 
-
-
 class SearchResultsContainer extends React.Component {
     constructor(){
         super();
         this.state = {
-          Button_1: true,
-          googlemapresult_image: purpose_group_googlemapresult_bethnal_green,
-          Button_2: false,
-          Button_3: false,
-          image_001: sr_gallery_bethnal_green_001,
-          image_002: sr_gallery_bethnal_green_002,
-          image_003: sr_gallery_bethnal_green_003,
-          image_004: sr_gallery_bethnal_green_004,
-          image_005: sr_gallery_bethnal_green_005,
-          image_006: sr_gallery_bethnal_green_006,
+            title: 'Bethnal Green',
+            Button_1: true,
+            googlemapresult_image: purpose_group_googlemapresult_bethnal_green,
+            Button_2: false,
+            Button_3: false,
+            image_001: sr_gallery_bethnal_green_001,
+            image_002: sr_gallery_bethnal_green_002,
+            image_003: sr_gallery_bethnal_green_003,
+            image_004: sr_gallery_bethnal_green_004,
+            image_005: sr_gallery_bethnal_green_005,
+            image_006: sr_gallery_bethnal_green_006,
         }
     }
       
     changeColor_1(){
         this.setState({
+            title: 'Bethnal Green',
             Button_1: true,
             googlemapresult_image: purpose_group_googlemapresult_bethnal_green,
             Button_2: false,
@@ -99,6 +99,7 @@ class SearchResultsContainer extends React.Component {
     }
     changeColor_2(){
         this.setState({
+            title: 'London Bridge',
             Button_1: false,
             Button_2: true,
             googlemapresult_image: purpose_group_googlemapresult_london_bridge,
@@ -114,6 +115,7 @@ class SearchResultsContainer extends React.Component {
     }
     changeColor_3(){
         this.setState({
+            title: 'Bermondsey',
             Button_1: false,
             Button_2: false,
             Button_3: true,
@@ -141,8 +143,6 @@ class SearchResultsContainer extends React.Component {
             "SearchResultPassive"
         ;
 
-
-  
         return (
             <div>
             <div className='SearchResultsContainer'>
@@ -194,8 +194,6 @@ class SearchResultsContainer extends React.Component {
                     googlemapresult_image =
                         {this.state.googlemapresult_image} />
                 
-                
-                
             </div>
             
                 <SearchResultsGallery
@@ -206,7 +204,7 @@ class SearchResultsContainer extends React.Component {
                     image_005={this.state.image_005}
                     image_006={this.state.image_006}/>
 
-                <FloorPlanContainer />
+                <FloorPlanContainer title = {this.state.title}/>
             </div>
             
             

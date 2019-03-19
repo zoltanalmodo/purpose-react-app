@@ -8,7 +8,7 @@ class App extends Component {
     render() {
         return (
             <div className='FloorPlanContainer'>
-                <FloorPlanPanelTitle title = 'Title'/>
+                <FloorPlanPanelTitle title = {this.props.title}/>
                 <FloorPlanPanel />
                 <FloorPlanDrawing />
             </div>
