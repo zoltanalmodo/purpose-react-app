@@ -3,14 +3,6 @@ import React from 'react';
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
 
-import image_001 from './images/purpose-building-001-001.png';
-import image_002 from './images/purpose-building-001-002.png';
-import image_003 from './images/purpose-building-001-003.png';
-import image_004 from './images/purpose-building-001-004.png';
-import image_005 from './images/purpose-building-001-005.png';
-import image_006 from './images/purpose-building-001-006.png';
-
-
 export default class Gallery002 extends React.Component {
 
     render() {
@@ -49,17 +41,17 @@ export default class Gallery002 extends React.Component {
           onSlideChanged={this.onSlideChanged}
         >
   
-          <img src={image_001}
+          <img src={this.props.image_001}
             onDragStart={handleOnDragStart} className="Gallery002" alt='img1'/>
-          <img src={image_002}
+          <img src={this.props.image_002}
             onDragStart={handleOnDragStart} className="Gallery002" alt='img2'/>
-          <img src={image_003}
+          <img src={this.props.image_003}
             onDragStart={handleOnDragStart} className="Gallery002" alt='img3'/>
-          <img src={image_004}
+          <img src={this.props.image_004}
             onDragStart={handleOnDragStart} className="Gallery002" alt='img4'/>
-          <img src={image_005}
+          <img src={this.props.image_005}
             onDragStart={handleOnDragStart} className="Gallery002" alt='img5'/>
-          <img src={image_006}
+          <img src={this.props.image_006}
             onDragStart={handleOnDragStart} className="Gallery002" alt='img6'/>
   
         </AliceCarousel>

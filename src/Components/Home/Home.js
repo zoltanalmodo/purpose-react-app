@@ -7,10 +7,7 @@ import SearchOnGoogleMapContainer
   from '../../Containers/SearchOnGoogleMapContainer/SearchOnGoogleMapContainer'
 import SearchResultsContainer
   from '../../Containers/SearchResultsContainer/SearcResultsContainer'
-import SearchResultsGallery
-  from '../../Containers/SearchResultsContainer/SearchResultsGallery/SearchResultsGallery'
-import FloorPlanContainer
-  from '../../Containers/FloorPlanContainer/FloorPlanContainer'
+
 
 import Footer from '../Footer/Footer'
 import Copyright from '../Copyright/Copyright'
@@ -25,9 +22,7 @@ export default function Home() {
       <SearchOnGoogleMapContainer />
 
       <SearchResultsContainer />
-        <SearchResultsGallery />
-        <FloorPlanContainer />
-      
+              
       <Footer />
       <Copyright />
     </div>

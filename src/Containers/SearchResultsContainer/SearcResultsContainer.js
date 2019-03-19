@@ -4,6 +4,10 @@ import SearchResultImage from './SearchResultsPanel/SearchResultImage/SearchResu
 import SearchResultText from './SearchResultText/SearchResultText'
 import SearchResultsGoogleMap 
     from './SearchResultsGoogleMap/SearchResultsGoogleMap'
+import SearchResultsGallery
+    from '../../Containers/SearchResultsContainer/SearchResultsGallery/SearchResultsGallery'
+import FloorPlanContainer
+    from '../../Containers/FloorPlanContainer/FloorPlanContainer'
 
 import searchresult_image_bethnal_green
     from './SearchResultsPanel/purpose-group-searchresult-bethnal-green.png'
@@ -20,6 +24,47 @@ import purpose_group_googlemapresult_london_bridge
 import purpose_group_googlemapresult_bermondsey
     from './purpose-group-googlemapresult-bermondsey.png'
 
+import sr_gallery_bethnal_green_001
+    from './SearchResultsGallery/img/sr-gallery-bethnal-green-001.png'
+import sr_gallery_bethnal_green_002
+    from './SearchResultsGallery/img/sr-gallery-bethnal-green-002.png'
+import sr_gallery_bethnal_green_003
+    from './SearchResultsGallery/img/sr-gallery-bethnal-green-003.png'
+import sr_gallery_bethnal_green_004
+    from './SearchResultsGallery/img/sr-gallery-bethnal-green-004.png'
+import sr_gallery_bethnal_green_005
+    from './SearchResultsGallery/img/sr-gallery-bethnal-green-005.png'
+import sr_gallery_bethnal_green_006
+    from './SearchResultsGallery/img/sr-gallery-bethnal-green-006.png'
+
+import sr_gallery_london_bridge_001
+    from './SearchResultsGallery/img/sr-gallery-london-bridge-001.png'
+import sr_gallery_london_bridge_002
+    from './SearchResultsGallery/img/sr-gallery-london-bridge-002.png'
+import sr_gallery_london_bridge_003
+    from './SearchResultsGallery/img/sr-gallery-london-bridge-003.png'
+import sr_gallery_london_bridge_004
+    from './SearchResultsGallery/img/sr-gallery-london-bridge-004.png'
+import sr_gallery_london_bridge_005
+    from './SearchResultsGallery/img/sr-gallery-london-bridge-005.png'
+import sr_gallery_london_bridge_006
+    from './SearchResultsGallery/img/sr-gallery-london-bridge-006.png'
+
+import sr_gallery_bermondsey_001
+    from './SearchResultsGallery/img/sr-gallery-bermondsey-001.png'
+import sr_gallery_bermondsey_002
+    from './SearchResultsGallery/img/sr-gallery-bermondsey-002.png'
+import sr_gallery_bermondsey_003
+    from './SearchResultsGallery/img/sr-gallery-bermondsey-003.png'
+import sr_gallery_bermondsey_004
+    from './SearchResultsGallery/img/sr-gallery-bermondsey-004.png'
+import sr_gallery_bermondsey_005
+    from './SearchResultsGallery/img/sr-gallery-bermondsey-005.png'
+import sr_gallery_bermondsey_006
+    from './SearchResultsGallery/img/sr-gallery-bermondsey-006.png'
+
+
+
 
 class SearchResultsContainer extends React.Component {
     constructor(){
@@ -29,6 +74,12 @@ class SearchResultsContainer extends React.Component {
           googlemapresult_image: purpose_group_googlemapresult_bethnal_green,
           Button_2: false,
           Button_3: false,
+          image_001: sr_gallery_bethnal_green_001,
+          image_002: sr_gallery_bethnal_green_002,
+          image_003: sr_gallery_bethnal_green_003,
+          image_004: sr_gallery_bethnal_green_004,
+          image_005: sr_gallery_bethnal_green_005,
+          image_006: sr_gallery_bethnal_green_006,
         }
     }
       
@@ -38,6 +89,12 @@ class SearchResultsContainer extends React.Component {
             googlemapresult_image: purpose_group_googlemapresult_bethnal_green,
             Button_2: false,
             Button_3: false,
+            image_001: sr_gallery_bethnal_green_001,
+            image_002: sr_gallery_bethnal_green_002,
+            image_003: sr_gallery_bethnal_green_003,
+            image_004: sr_gallery_bethnal_green_004,
+            image_005: sr_gallery_bethnal_green_005,
+            image_006: sr_gallery_bethnal_green_006,
         })
     }
     changeColor_2(){
@@ -46,6 +103,13 @@ class SearchResultsContainer extends React.Component {
             Button_2: true,
             googlemapresult_image: purpose_group_googlemapresult_london_bridge,
             Button_3: false,
+            image_001: sr_gallery_london_bridge_001,
+            image_002: sr_gallery_london_bridge_002,
+            image_003: sr_gallery_london_bridge_003,
+            image_004: sr_gallery_london_bridge_004,
+            image_005: sr_gallery_london_bridge_005,
+            image_006: sr_gallery_london_bridge_006,
+            
         })
     }
     changeColor_3(){
@@ -54,6 +118,12 @@ class SearchResultsContainer extends React.Component {
             Button_2: false,
             Button_3: true,
             googlemapresult_image: purpose_group_googlemapresult_bermondsey,
+            image_001: sr_gallery_bermondsey_001,
+            image_002: sr_gallery_bermondsey_002,
+            image_003: sr_gallery_bermondsey_003,
+            image_004: sr_gallery_bermondsey_004,
+            image_005: sr_gallery_bermondsey_005,
+            image_006: sr_gallery_bermondsey_006,
         })
     }
 
@@ -74,6 +144,7 @@ class SearchResultsContainer extends React.Component {
 
   
         return (
+            <div>
             <div className='SearchResultsContainer'>
                 <div className='SearchResultPanel'>
 
@@ -122,8 +193,22 @@ class SearchResultsContainer extends React.Component {
                 <SearchResultsGoogleMap
                     googlemapresult_image =
                         {this.state.googlemapresult_image} />
-
+                
+                
+                
             </div>
+            
+                <SearchResultsGallery
+                    image_001={this.state.image_001}
+                    image_002={this.state.image_002}
+                    image_003={this.state.image_003}
+                    image_004={this.state.image_004}
+                    image_005={this.state.image_005}
+                    image_006={this.state.image_006}/>
+
+                <FloorPlanContainer />
+            </div>
+            
             
         )
     }
