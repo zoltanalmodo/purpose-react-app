@@ -12,12 +12,13 @@ import searchresult_image_london_bridge
 import searchresult_image_bermondsey
     from './SearchResultsPanel/purpose-group-searchresult-bermondsey.png'
 
-import purpose_group_googlemapresult_bermondsey
-    from './purpose-group-googlemapresult-bermondsey.png'
+
 import purpose_group_googlemapresult_bethnal_green
     from './purpose-group-googlemapresult-bethnal-green.png'
 import purpose_group_googlemapresult_london_bridge
     from './purpose-group-googlemapresult-london-bridge.png'
+import purpose_group_googlemapresult_bermondsey
+    from './purpose-group-googlemapresult-bermondsey.png'
 
 
 class SearchResultsContainer extends React.Component {
@@ -25,6 +26,7 @@ class SearchResultsContainer extends React.Component {
         super();
         this.state = {
           Button_1: true,
+          googlemapresult_image: purpose_group_googlemapresult_bethnal_green,
           Button_2: false,
           Button_3: false,
         }
@@ -33,6 +35,7 @@ class SearchResultsContainer extends React.Component {
     changeColor_1(){
         this.setState({
             Button_1: true,
+            googlemapresult_image: purpose_group_googlemapresult_bethnal_green,
             Button_2: false,
             Button_3: false,
         })
@@ -41,6 +44,7 @@ class SearchResultsContainer extends React.Component {
         this.setState({
             Button_1: false,
             Button_2: true,
+            googlemapresult_image: purpose_group_googlemapresult_london_bridge,
             Button_3: false,
         })
     }
@@ -49,6 +53,7 @@ class SearchResultsContainer extends React.Component {
             Button_1: false,
             Button_2: false,
             Button_3: true,
+            googlemapresult_image: purpose_group_googlemapresult_bermondsey,
         })
     }
 
@@ -66,7 +71,7 @@ class SearchResultsContainer extends React.Component {
             "SearchResultPassive"
         ;
 
-        
+
   
         return (
             <div className='SearchResultsContainer'>
@@ -116,7 +121,7 @@ class SearchResultsContainer extends React.Component {
                 </div>
                 <SearchResultsGoogleMap
                     googlemapresult_image =
-                        {purpose_group_googlemapresult_bermondsey} />
+                        {this.state.googlemapresult_image} />
 
             </div>
             
