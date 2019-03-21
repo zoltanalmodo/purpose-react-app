@@ -2,11 +2,11 @@ import React from 'react';
 
 
 
-export default function FloorPlanPanelText() {
+export default function FloorPlanPanelText(props) {
     return (
         <div className='FloorPlanPanelText'>
             <p>
-                Our Media arrangement:<br></br>
+                {props.description}<br></br>
                 <br></br>
                 <br></br>
                 Text text text text text text te

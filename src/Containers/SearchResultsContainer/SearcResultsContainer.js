@@ -64,6 +64,10 @@ import sr_gallery_bermondsey_006
     from './SearchResultsGallery/img/sr-gallery-bermondsey-006.png'
 
 
+import FloorPlanDrawing_drawing
+    from '../FloorPlanContainer/FloorPlanDrawing/purpose-group-FloorPlanDrawing.png'
+
+
 class SearchResultsContainer extends React.Component {
     constructor(){
         super();
@@ -79,6 +83,7 @@ class SearchResultsContainer extends React.Component {
             image_004: sr_gallery_bethnal_green_004,
             image_005: sr_gallery_bethnal_green_005,
             image_006: sr_gallery_bethnal_green_006,
+            drawing: FloorPlanDrawing_drawing,
         }
     }
       
@@ -95,6 +100,7 @@ class SearchResultsContainer extends React.Component {
             image_004: sr_gallery_bethnal_green_004,
             image_005: sr_gallery_bethnal_green_005,
             image_006: sr_gallery_bethnal_green_006,
+            drawing: FloorPlanDrawing_drawing,
         })
     }
     changeColor_2(){
@@ -110,6 +116,7 @@ class SearchResultsContainer extends React.Component {
             image_004: sr_gallery_london_bridge_004,
             image_005: sr_gallery_london_bridge_005,
             image_006: sr_gallery_london_bridge_006,
+            drawing: FloorPlanDrawing_drawing,
             
         })
     }
@@ -126,6 +133,7 @@ class SearchResultsContainer extends React.Component {
             image_004: sr_gallery_bermondsey_004,
             image_005: sr_gallery_bermondsey_005,
             image_006: sr_gallery_bermondsey_006,
+            drawing: FloorPlanDrawing_drawing,
         })
     }
 
@@ -204,7 +212,9 @@ class SearchResultsContainer extends React.Component {
                     image_005={this.state.image_005}
                     image_006={this.state.image_006}/>
 
-                <FloorPlanContainer title = {this.state.title}/>
+                <FloorPlanContainer
+                    title = {this.state.title}
+                    drawing = {this.state.drawing}/>
             </div>
             
             

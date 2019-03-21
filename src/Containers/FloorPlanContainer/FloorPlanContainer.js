@@ -5,12 +5,20 @@ import FloorPlanPanel from './FloorPlanPanel/FloorPlanPanel'
 import FloorPlanDrawing from './FloorPlanDrawing/FloorPlanDrawing'
 
 class App extends Component {
+
     render() {
         return (
             <div className='FloorPlanContainer'>
-                <FloorPlanPanelTitle title = {this.props.title}/>
-                <FloorPlanPanel />
-                <FloorPlanDrawing />
+
+                <FloorPlanPanelTitle
+                    title = {this.props.title}/>
+
+                <FloorPlanPanel
+                    floor_plan_description = {this.props.floor_plan_description}/>
+
+                <FloorPlanDrawing
+                    drawing = {this.props.drawing}/>
+
             </div>
         );
     }
