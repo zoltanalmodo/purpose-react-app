@@ -14,7 +14,8 @@ class App extends Component {
                     title = {this.props.title}/>
 
                 <FloorPlanPanel
-                    floor_plan_description = {this.props.floor_plan_description}/>
+                    floor_plan_description = {this.props.floor_plan_description}
+                />
 
                 <FloorPlanDrawing
                     drawing = {this.props.drawing}/>

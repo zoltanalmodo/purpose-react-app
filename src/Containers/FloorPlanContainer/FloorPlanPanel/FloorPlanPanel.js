@@ -8,7 +8,8 @@ export default function FloorPlanPanel(props) {
     return (
         <div className='FloorPlanPanel'>
             
-            <FloorPlanPanelSelector />
+            <FloorPlanPanelSelector 
+                />
 
             <FloorPlanPanelText
                 description = {props.floor_plan_description}/>
