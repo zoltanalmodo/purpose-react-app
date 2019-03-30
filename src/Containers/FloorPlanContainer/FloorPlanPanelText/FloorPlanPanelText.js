@@ -5,36 +5,19 @@ export default function FloorPlanPanelText(props) {
     return (
         <div className='FloorPlanPanelText'>
             <p>
-                {props.description}<br></br>
+                {props.floor_plan_description_title}<br></br>
                 <br></br>
                 <br></br>
-                Text text text text text text te
-                text text text text text text te
-                text text text text text text te
-                text text text text text text te
-                text text text text text text te
-                text text text text text text te
-                text text text text text text te
-                text text text text text text te
-                text text text text text text te
-                text text text text text text te
-                text text text text text text te
-                text text text text text text te
-                text text text text text text te
-                text text. <br></br>
+                {props.floor_plan_description}<br></br>
                 <br></br>
                 <br></br>
-                Your team...<br></br>
+                {props.floor_plan_more_description_title}<br></br>
                 <br></br>
                 <br></br>
-                More more more more more more mo
-                more more more more more more mo
-                more more more more more more mo
-                more more more more more more mo
-                more more more.
+                {props.floor_plan_more_description}
             </p>
             <div className='FloorPlanPanelPrice'>
-                <h1>£ 18.900- / month</h1>
+                <h1>{props.floor_plan_price}</h1>
             </div>
         </div>
     )

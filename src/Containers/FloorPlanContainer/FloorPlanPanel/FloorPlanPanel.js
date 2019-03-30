@@ -12,7 +12,14 @@ export default function FloorPlanPanel(props) {
                 />
 
             <FloorPlanPanelText
-                description = {props.floor_plan_description}/>
+                floor_plan_description_title = {props.floor_plan_description_title}
+                floor_plan_description = {props.floor_plan_description}
+                floor_plan_more_description_title =
+                    {props.floor_plan_more_description_title}
+                floor_plan_more_description = 
+                    {props.floor_plan_more_description}
+                floor_plan_price = {props.floor_plan_price}
+            />
             
         </div>
     )

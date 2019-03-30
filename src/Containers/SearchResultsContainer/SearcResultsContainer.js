@@ -83,7 +83,29 @@ class SearchResultsContainer extends React.Component {
             image_004: sr_gallery_bethnal_green_004,
             image_005: sr_gallery_bethnal_green_005,
             image_006: sr_gallery_bethnal_green_006,
-            floor_plan_description: 'Bethnal Green',
+            floor_plan_description_title: `Bethnal Green MEDIA description title`,
+            floor_plan_description:
+                `Bethnal Green MEDIA text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text
+                text text.`,
+            floor_plan_more_description_title: `Bethnal Green MEDIA more description title`,
+            floor_plan_more_description:
+                `Bethnal Green MEDIA more more more more more more
+                more more more more more more more
+                more more more more more more more
+                more more more more more more more
+                more more more.`,
+            floor_plan_price: `£ 18.500 / month MEDIA`,
             drawing: FloorPlanDrawing_drawing,
         }
     }
@@ -101,7 +123,29 @@ class SearchResultsContainer extends React.Component {
             image_004: sr_gallery_bethnal_green_004,
             image_005: sr_gallery_bethnal_green_005,
             image_006: sr_gallery_bethnal_green_006,
-            floor_plan_description: 'Bethnal Green',
+            floor_plan_description_title: `Bethnal Green MEDIA description title`,
+            floor_plan_description:
+                `Bethnal Green MEDIA text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text
+                text text.`,
+            floor_plan_more_description_title: `Bethnal Green MEDIA more description title`,
+            floor_plan_more_description:
+                `Bethnal Green MEDIA more more more more more more
+                more more more more more more more
+                more more more more more more more
+                more more more more more more more
+                more more more.`,
+            floor_plan_price: `£ 18.500 / month MEDIA`,
             drawing: FloorPlanDrawing_drawing,
         })
     }
@@ -118,7 +162,29 @@ class SearchResultsContainer extends React.Component {
             image_004: sr_gallery_london_bridge_004,
             image_005: sr_gallery_london_bridge_005,
             image_006: sr_gallery_london_bridge_006,
-            floor_plan_description: 'London Bridge',
+            floor_plan_description_title: `London Bridge MEDIA description title`,
+            floor_plan_description:
+                `London Bridge MEDIA text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text
+                text text.`,
+            floor_plan_more_description_title: `London Bridge MEDIA more description title`,
+            floor_plan_more_description:
+                `London Bridge MEDIA more more more more more more
+                more more more more more more more
+                more more more more more more more
+                more more more more more more more
+                more more more.`,
+            floor_plan_price: `£ 14.000 / month MEDIA`,
             drawing: FloorPlanDrawing_drawing,
             
         })
@@ -136,7 +202,29 @@ class SearchResultsContainer extends React.Component {
             image_004: sr_gallery_bermondsey_004,
             image_005: sr_gallery_bermondsey_005,
             image_006: sr_gallery_bermondsey_006,
-            floor_plan_description: 'Bermondsey',
+            floor_plan_description_title: `Bermondsey MEDIA description title`,
+            floor_plan_description:
+                `Bermondsey MEDIA text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text
+                text text.`,
+            floor_plan_more_description_title: `Bermondsey MEDIA more description title`,
+            floor_plan_more_description:
+                `Bermondsey MEDIA more more more more more more
+                more more more more more more more
+                more more more more more more more
+                more more more more more more more
+                more more more.`,
+            floor_plan_price: `£ 11.300 / month MEDIA`,
             drawing: FloorPlanDrawing_drawing,
         })
     }
@@ -218,8 +306,17 @@ class SearchResultsContainer extends React.Component {
 
                 <FloorPlanContainer
                     title = {this.state.title}
+                    floor_plan_description_title =
+                        {this.state.floor_plan_description_title}
                     floor_plan_description = {this.state.floor_plan_description}
-                    drawing = {this.state.drawing}/>
+                    floor_plan_more_description_title =
+                        {this.state.floor_plan_more_description_title}
+                    floor_plan_more_description =
+                        {this.state.floor_plan_more_description}
+                    floor_plan_price = {this.state.floor_plan_price}
+
+                    drawing = {this.state.drawing}
+                />
             </div>
             
             
