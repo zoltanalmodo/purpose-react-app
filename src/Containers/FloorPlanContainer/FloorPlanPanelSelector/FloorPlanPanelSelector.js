@@ -45,22 +45,30 @@ export default class FloorPlanPanelSelector extends Component {
       let Button_Office_class = this.state.Office ? "activeButton" : "passiveButton";
       let Button_Open_class = this.state.Open ? "activeButton" : "passiveButton";
 
-      return (
-        <div className='FloorPlanPanelSelector'>
+    return (
+      <div className='FloorPlanPanelSelector'>
             
-            <div className={Button_Media_class} onClick={this.changeColor_1.bind(this)}>
-                    <h1 className='SelectorButton'>Media</h1>
-            </div>
+          <div
+            className={Button_Media_class}
+            onClick={this.changeColor_1.bind(this)}
+          >
+            <h1 className='SelectorButton'>Media</h1>
+          </div>
 
-            <div className={Button_Office_class} onClick={this.changeColor_2.bind(this)}>
-                    <h1 className='SelectorButton'>Office</h1>
-            </div>
+          <div
+            className={Button_Office_class}
+            onClick={this.changeColor_2.bind(this)}
+          >
+            <h1 className='SelectorButton'>Office</h1>
+          </div>
 
-            <div className={Button_Open_class} onClick={this.changeColor_3.bind(this)}>
-                    <h1 className='SelectorButton'>Open</h1>
-            </div>
-
-        </div>
-      )
+          <div
+            className={Button_Open_class}
+            onClick={this.changeColor_3.bind(this)}
+          >
+            <h1 className='SelectorButton'>Open</h1>
+          </div>
+      </div>
+    )
   }
 }

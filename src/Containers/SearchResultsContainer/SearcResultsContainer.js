@@ -72,6 +72,7 @@ class SearchResultsContainer extends React.Component {
     constructor(){
         super();
         this.state = {
+            // activeButtonTitle: '', // this is the active button
             title: 'Bethnal Green',
             Button_1: true,
             googlemapresult_image: purpose_group_googlemapresult_bethnal_green,
@@ -108,6 +109,7 @@ class SearchResultsContainer extends React.Component {
             floor_plan_price: `£ 18.500 / month MEDIA`,
             drawing: FloorPlanDrawing_drawing,
         }
+        // this.buttons = dummyData // array of button object data
     }
       
     changeColor_1(){
@@ -229,6 +231,10 @@ class SearchResultsContainer extends React.Component {
         })
     }
 
+    setActiveButton(activeButtonTitle) {
+        this.setState({activeButtonTitle})
+    }
+
     render() {
         let Button_1_class = this.state.Button_1 ?
             "SearchResultActive" :
@@ -247,8 +253,14 @@ class SearchResultsContainer extends React.Component {
             <div>
             <div className='SearchResultsContainer'>
                 <div className='SearchResultPanel'>
-
+                    {/* {this.buttons.map(button =>
+                        <Button
+                            {...props}
+                            buttonIsActive={this.state.activeButtonTitle}
+                            handleClick{() => setActiveButton(button.title)}
+                        />)} */}
                     <div className={Button_1_class}
+                        // onClick={props.handleClick}
                         onClick={this.changeColor_1.bind(this)}>
 
                         <SearchResultImage 
