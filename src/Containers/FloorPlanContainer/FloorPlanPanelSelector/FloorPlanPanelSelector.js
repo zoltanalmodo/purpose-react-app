@@ -35,11 +35,6 @@ export default class FloorPlanPanelSelector extends Component {
      })
   }
 
-  // handleClick = (event) => {
-  //   accessible: event.target.style
-  //   to change style via css : event.target.classList
-  // }
-
   render(){
       let Button_Media_class = this.state.Media ? "activeButton" : "passiveButton";
       let Button_Office_class = this.state.Office ? "activeButton" : "passiveButton";

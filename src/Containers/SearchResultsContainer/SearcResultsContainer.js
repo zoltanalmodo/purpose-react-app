@@ -331,7 +331,6 @@ class SearchResultsContainer extends React.Component {
                 />
             </div>
             
-            
         )
     }
 }
