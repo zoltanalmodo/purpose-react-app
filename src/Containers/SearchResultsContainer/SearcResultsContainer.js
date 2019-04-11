@@ -126,7 +126,7 @@ class SearchResultsContainer extends React.Component {
                 more more more more more more more
                 more more more.`,
             floor_plan_price_media: `£ 18.500 / month MEDIA`,
-            drawing: FloorPlanDrawing_bethnal_green_media,
+            drawing_media: FloorPlanDrawing_bethnal_green_media,
 //_office
             floor_plan_description_title_office:
                 `Bethnal Green OFFICE description title`,
@@ -153,7 +153,7 @@ class SearchResultsContainer extends React.Component {
                 more more more more more more more
                 more more more.`,
             floor_plan_price_office: `£ 13.250 / month OFFICE`,
-            drawing: FloorPlanDrawing_bethnal_green_office,
+            drawing_office: FloorPlanDrawing_bethnal_green_office,
 
 //_open
             floor_plan_description_title_open:
@@ -181,7 +181,7 @@ class SearchResultsContainer extends React.Component {
                 more more more more more more more
                 more more more.`,
             floor_plan_price_open: `£ 9.750 / month OPEN`,
-            drawing: FloorPlanDrawing_bethnal_green_open,
+            drawing_open: FloorPlanDrawing_bethnal_green_open,
 
         }
         // this.buttons = dummyData // array of button object data
@@ -226,7 +226,7 @@ class SearchResultsContainer extends React.Component {
                 more more more more more more more
                 more more more.`,
             floor_plan_price_media: `£ 18.500 / month MEDIA`,
-            drawing: FloorPlanDrawing_bethnal_green_media,
+            drawing_media: FloorPlanDrawing_bethnal_green_media,
 //_office
             floor_plan_description_title_office:
             `Bethnal Green OFFICE description title`,
@@ -253,7 +253,7 @@ class SearchResultsContainer extends React.Component {
             more more more more more more more
             more more more.`,
             floor_plan_price_office: `£ 13.250 / month OFFICE`,
-            drawing: FloorPlanDrawing_bethnal_green_office,
+            drawing_office: FloorPlanDrawing_bethnal_green_office,
 
 //_open
             floor_plan_description_title_open:
@@ -281,7 +281,7 @@ class SearchResultsContainer extends React.Component {
                 more more more more more more more
                 more more more.`,
             floor_plan_price_open: `£ 9.750 / month OPEN`,
-            drawing: FloorPlanDrawing_bethnal_green_open,
+            drawing_open: FloorPlanDrawing_bethnal_green_open,
 
         })
     }
@@ -324,7 +324,7 @@ class SearchResultsContainer extends React.Component {
                 more more more more more more more
                 more more more.`,
             floor_plan_price_media: `£ 14.000 / month MEDIA`,
-            drawing: FloorPlanDrawing_london_bridge_media,
+            drawing_media: FloorPlanDrawing_london_bridge_media,
 //_office
             floor_plan_description_title_office:
             `London Bridge OFFICE description title`,
@@ -351,7 +351,7 @@ class SearchResultsContainer extends React.Component {
             more more more more more more more
             more more more.`,
             floor_plan_price_office: `£ 12.500 / month OFFICE`,
-            drawing: FloorPlanDrawing_london_bridge_office,
+            drawing_office: FloorPlanDrawing_london_bridge_office,
 //_open
             floor_plan_description_title_open:
             `London Bridge OPEN description title`,
@@ -378,7 +378,7 @@ class SearchResultsContainer extends React.Component {
             more more more more more more more
             more more more.`,
             floor_plan_price_open: `£ 11.200 / month OPEN`,
-            drawing: FloorPlanDrawing_london_bridge_open,
+            drawing_open: FloorPlanDrawing_london_bridge_open,
             
         })
     }
@@ -421,7 +421,7 @@ class SearchResultsContainer extends React.Component {
                 more more more more more more more
                 more more more.`,
             floor_plan_price_media: `£ 3.300 / month MEDIA`,
-            drawing: FloorPlanDrawing_bermondsey_media,
+            drawing_media: FloorPlanDrawing_bermondsey_media,
 //_office
             floor_plan_description_title_office:
                 `Bermondsey OFFICE description title`,
@@ -448,7 +448,7 @@ class SearchResultsContainer extends React.Component {
                 more more more more more more more
                 more more more.`,
             floor_plan_price_office: `£ 2.750 / month OFFICE`,
-            drawing: FloorPlanDrawing_bermondsey_office,
+            drawing_office: FloorPlanDrawing_bermondsey_office,
 //_open
             floor_plan_description_title_open:
                 `Bermondsey OPEN description title`,
@@ -475,7 +475,7 @@ class SearchResultsContainer extends React.Component {
                 more more more more more more more
                 more more more.`,
             floor_plan_price_open: `£ 1.500 / month OPEN`,
-            drawing: FloorPlanDrawing_bermondsey_open,
+            drawing_open: FloorPlanDrawing_bermondsey_open,
 
 
         })
@@ -568,8 +568,13 @@ class SearchResultsContainer extends React.Component {
 
                 <FloorPlanContainer
                     title = {this.state.title}
-                    floor_plan_description_title =
-                        {this.state.floor_plan_description_title}
+                    floor_plan_description_title_media =
+                        {this.state.floor_plan_description_title_media}
+                    floor_plan_description_title_office =
+                        {this.state.floor_plan_description_title_office}
+                    floor_plan_description_title_open =
+                        {this.state.floor_plan_description_title_open}
+
                     floor_plan_description = {this.state.floor_plan_description}
                     floor_plan_more_description_title =
                         {this.state.floor_plan_more_description_title}
@@ -577,7 +582,9 @@ class SearchResultsContainer extends React.Component {
                         {this.state.floor_plan_more_description}
                     floor_plan_price = {this.state.floor_plan_price}
 
-                    drawing = {this.state.drawing}
+                    drawing_media = {this.state.drawing_media}
+                    drawing_office = {this.state.drawing_office}
+                    drawing_open = {this.state.drawing_open}
                 />
             </div>
             

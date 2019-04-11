@@ -41,15 +41,26 @@ class FloorPlanContainer extends Component {
 
     render() {
 
-        let Button_Media_class = this.state.Media ? "activeButton" : "passiveButton";
-        let Button_Office_class = this.state.Office ? "activeButton" : "passiveButton";
-        let Button_Open_class = this.state.Open ? "activeButton" : "passiveButton";
+        let Button_Media_class =
+            this.state.Media ? "activeButton" : "passiveButton";
+        let Button_Office_class =
+            this.state.Office ? "activeButton" : "passiveButton";
+        let Button_Open_class =
+            this.state.Open ? "activeButton" : "passiveButton";
         
         let floor_plan_description_title_conditional =
             this.state.Media ? this.props.floor_plan_description_title_media
             : this.state.Office ? this.props.floor_plan_description_title_office
             : this.state.Open ? this.props.floor_plan_description_title_open
             : null;
+
+
+        let drawing_conditional = 
+            this.state.Media ? this.props.drawing_media
+            : this.state.Office ? this.props.drawing_office
+            : this.state.Open ? this.props.drawing_open
+            : null;
+            
 
         return (
             <div className='FloorPlanContainer'>
@@ -102,7 +113,7 @@ class FloorPlanContainer extends Component {
             </div>
 
                 <FloorPlanDrawing
-                    drawing = {this.props.drawing}/>
+                    drawing = {drawing_conditional}/>
 {/* //// */}
             </div>
         );
