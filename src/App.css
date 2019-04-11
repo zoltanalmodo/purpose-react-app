@@ -603,7 +603,10 @@ p {
   position: absolute;
   bottom: 0px;
   background-color: #ffff00;
-  padding-bottom: 56px;
+
+  padding-right: 28px;
+  padding-right: 28px;
+  padding-bottom: 100px;
 }
 
 .FloorPlanDrawing {
@@ -620,7 +623,6 @@ p {
 }
 
 /* === FOOTER (END) ============================================================== */
-
 
 /* === FOOTER (START) ============================================================ */
 

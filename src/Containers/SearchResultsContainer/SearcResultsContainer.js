@@ -100,13 +100,11 @@ class SearchResultsContainer extends React.Component {
             image_004: sr_gallery_bethnal_green_004,
             image_005: sr_gallery_bethnal_green_005,
             image_006: sr_gallery_bethnal_green_006,
-//_media
+//_bethnal_green_media
             floor_plan_description_title_media:
                 `Bethnal Green MEDIA description title`,
             floor_plan_description_media:
                 `Bethnal Green MEDIA text text text text 
-                text text text text text text 
-                text text text text text text 
                 text text text text text text 
                 text text text text text text 
                 text text text text text text 
@@ -123,17 +121,14 @@ class SearchResultsContainer extends React.Component {
                 `Bethnal Green MEDIA more more more more more more
                 more more more more more more more
                 more more more more more more more
-                more more more more more more more
                 more more more.`,
             floor_plan_price_media: `£ 18.500 / month MEDIA`,
             drawing_media: FloorPlanDrawing_bethnal_green_media,
-//_office
+//_bethnal_green_office
             floor_plan_description_title_office:
                 `Bethnal Green OFFICE description title`,
             floor_plan_description_office:
                 `Bethnal Green OFFICE text text text text 
-                text text text text text text 
-                text text text text text text 
                 text text text text text text 
                 text text text text text text 
                 text text text text text text 
@@ -150,18 +145,15 @@ class SearchResultsContainer extends React.Component {
                 `Bethnal Green OFFICE more more more more more more
                 more more more more more more more
                 more more more more more more more
-                more more more more more more more
                 more more more.`,
             floor_plan_price_office: `£ 13.250 / month OFFICE`,
             drawing_office: FloorPlanDrawing_bethnal_green_office,
 
-//_open
+//_bethnal_green_open
             floor_plan_description_title_open:
                 `Bethnal Green OPEN description title`,
             floor_plan_description_open:
                 `Bethnal Green OPEN text text text text 
-                text text text text text text 
-                text text text text text text 
                 text text text text text text 
                 text text text text text text 
                 text text text text text text 
@@ -176,7 +168,6 @@ class SearchResultsContainer extends React.Component {
                 `Bethnal Green OPEN more description title`,
             floor_plan_more_description_open:
                 `Bethnal Green OPEN more more more more more more
-                more more more more more more more
                 more more more more more more more
                 more more more more more more more
                 more more more.`,
@@ -200,13 +191,11 @@ class SearchResultsContainer extends React.Component {
             image_004: sr_gallery_bethnal_green_004,
             image_005: sr_gallery_bethnal_green_005,
             image_006: sr_gallery_bethnal_green_006,
-//_media
+//_bethnal_green_media
             floor_plan_description_title_media:
                 `Bethnal Green MEDIA description title`,
             floor_plan_description_media:
                 `Bethnal Green MEDIA text text text text 
-                text text text text text text 
-                text text text text text text 
                 text text text text text text 
                 text text text text text text 
                 text text text text text text 
@@ -223,45 +212,39 @@ class SearchResultsContainer extends React.Component {
                 `Bethnal Green MEDIA more more more more more more
                 more more more more more more more
                 more more more more more more more
-                more more more more more more more
                 more more more.`,
             floor_plan_price_media: `£ 18.500 / month MEDIA`,
             drawing_media: FloorPlanDrawing_bethnal_green_media,
-//_office
+//_bethnal_green_office
             floor_plan_description_title_office:
-            `Bethnal Green OFFICE description title`,
+                `Bethnal Green OFFICE description title`,
             floor_plan_description_office:
-            `Bethnal Green OFFICE text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text
-            text text.`,
+                `Bethnal Green OFFICE text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text
+                text text.`,
             floor_plan_more_description_title_office:
-            `Bethnal Green OFFICE more description title`,
+                `Bethnal Green OFFICE more description title`,
             floor_plan_more_description_office:
-            `Bethnal Green OFFICE more more more more more more
-            more more more more more more more
-            more more more more more more more
-            more more more more more more more
-            more more more.`,
+                `Bethnal Green OFFICE more more more more more more
+                more more more more more more more
+                more more more more more more more
+                more more more.`,
             floor_plan_price_office: `£ 13.250 / month OFFICE`,
             drawing_office: FloorPlanDrawing_bethnal_green_office,
 
-//_open
+//_bethnal_green_open
             floor_plan_description_title_open:
                 `Bethnal Green OPEN description title`,
             floor_plan_description_open:
                 `Bethnal Green OPEN text text text text 
-                text text text text text text 
-                text text text text text text 
                 text text text text text text 
                 text text text text text text 
                 text text text text text text 
@@ -276,7 +259,6 @@ class SearchResultsContainer extends React.Component {
                 `Bethnal Green OPEN more description title`,
             floor_plan_more_description_open:
                 `Bethnal Green OPEN more more more more more more
-                more more more more more more more
                 more more more more more more more
                 more more more more more more more
                 more more more.`,
@@ -298,13 +280,11 @@ class SearchResultsContainer extends React.Component {
             image_004: sr_gallery_london_bridge_004,
             image_005: sr_gallery_london_bridge_005,
             image_006: sr_gallery_london_bridge_006,
-//_media
+//_london_bridge_media
             floor_plan_description_title_media:
                 `London Bridge MEDIA description title`,
             floor_plan_description_media:
                 `London Bridge MEDIA text text text text 
-                text text text text text text 
-                text text text text text text 
                 text text text text text text 
                 text text text text text text 
                 text text text text text text 
@@ -321,62 +301,55 @@ class SearchResultsContainer extends React.Component {
                 `London Bridge MEDIA more more more more more more
                 more more more more more more more
                 more more more more more more more
-                more more more more more more more
                 more more more.`,
             floor_plan_price_media: `£ 14.000 / month MEDIA`,
             drawing_media: FloorPlanDrawing_london_bridge_media,
-//_office
+//_london_bridge_office
             floor_plan_description_title_office:
             `London Bridge OFFICE description title`,
             floor_plan_description_office:
-            `London Bridge OFFICE text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text
-            text text.`,
+                `London Bridge OFFICE text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text
+                text text.`,
             floor_plan_more_description_title_office:
-            `London Bridge OFFICE more description title`,
+                `London Bridge OFFICE more description title`,
             floor_plan_more_description_office:
-            `London Bridge OFFICE more more more more more more
-            more more more more more more more
-            more more more more more more more
-            more more more more more more more
-            more more more.`,
+                `London Bridge OFFICE more more more more more more
+                more more more more more more more
+                more more more more more more more
+                more more more.`,
             floor_plan_price_office: `£ 12.500 / month OFFICE`,
             drawing_office: FloorPlanDrawing_london_bridge_office,
-//_open
+//_london_bridge_open
             floor_plan_description_title_open:
-            `London Bridge OPEN description title`,
+                `London Bridge OPEN description title`,
             floor_plan_description_open:
-            `London Bridge OPEN text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text 
-            text text text text text text
-            text text.`,
+                `London Bridge OPEN text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text
+                text text.`,
             floor_plan_more_description_title_open:
-            `London Bridge OPEN more description title`,
+                `London Bridge OPEN more description title`,
             floor_plan_more_description_open:
-            `London Bridge OPEN more more more more more more
-            more more more more more more more
-            more more more more more more more
-            more more more more more more more
-            more more more.`,
+                `London Bridge OPEN more more more more more more
+                more more more more more more more
+                more more more more more more more
+                more more more.`,
             floor_plan_price_open: `£ 11.200 / month OPEN`,
             drawing_open: FloorPlanDrawing_london_bridge_open,
             
@@ -395,13 +368,11 @@ class SearchResultsContainer extends React.Component {
             image_004: sr_gallery_bermondsey_004,
             image_005: sr_gallery_bermondsey_005,
             image_006: sr_gallery_bermondsey_006,
-//_media
+//_bermondsey_media
             floor_plan_description_title_media:
                 `Bermondsey MEDIA description title`,
             floor_plan_description_media:
                 `Bermondsey MEDIA text text text text 
-                text text text text text text 
-                text text text text text text 
                 text text text text text text 
                 text text text text text text 
                 text text text text text text 
@@ -418,17 +389,14 @@ class SearchResultsContainer extends React.Component {
                 `Bermondsey MEDIA more more more more more more
                 more more more more more more more
                 more more more more more more more
-                more more more more more more more
                 more more more.`,
-            floor_plan_price_media: `£ 3.300 / month MEDIA`,
+            floor_plan_price_media: `£ 4.300 / month MEDIA`,
             drawing_media: FloorPlanDrawing_bermondsey_media,
-//_office
+//_bermondsey_office
             floor_plan_description_title_office:
                 `Bermondsey OFFICE description title`,
             floor_plan_description_office:
                 `Bermondsey OFFICE text text text text 
-                text text text text text text 
-                text text text text text text 
                 text text text text text text 
                 text text text text text text 
                 text text text text text text 
@@ -445,17 +413,14 @@ class SearchResultsContainer extends React.Component {
                 `Bermondsey OFFICE more more more more more more
                 more more more more more more more
                 more more more more more more more
-                more more more more more more more
                 more more more.`,
-            floor_plan_price_office: `£ 2.750 / month OFFICE`,
+            floor_plan_price_office: `£ 3.750 / month OFFICE`,
             drawing_office: FloorPlanDrawing_bermondsey_office,
-//_open
+//_bermondsey_open
             floor_plan_description_title_open:
                 `Bermondsey OPEN description title`,
             floor_plan_description_open:
                 `Bermondsey OPEN text text text text 
-                text text text text text text 
-                text text text text text text 
                 text text text text text text 
                 text text text text text text 
                 text text text text text text 
@@ -472,11 +437,9 @@ class SearchResultsContainer extends React.Component {
                 `Bermondsey OPEN more more more more more more
                 more more more more more more more
                 more more more more more more more
-                more more more more more more more
                 more more more.`,
-            floor_plan_price_open: `£ 1.500 / month OPEN`,
+            floor_plan_price_open: `£ 2.500 / month OPEN`,
             drawing_open: FloorPlanDrawing_bermondsey_open,
-
 
         })
     }
@@ -568,6 +531,7 @@ class SearchResultsContainer extends React.Component {
 
                 <FloorPlanContainer
                     title = {this.state.title}
+
                     floor_plan_description_title_media =
                         {this.state.floor_plan_description_title_media}
                     floor_plan_description_title_office =
@@ -575,12 +539,30 @@ class SearchResultsContainer extends React.Component {
                     floor_plan_description_title_open =
                         {this.state.floor_plan_description_title_open}
 
-                    floor_plan_description = {this.state.floor_plan_description}
-                    floor_plan_more_description_title =
-                        {this.state.floor_plan_more_description_title}
-                    floor_plan_more_description =
-                        {this.state.floor_plan_more_description}
-                    floor_plan_price = {this.state.floor_plan_price}
+                    floor_plan_description_media =
+                        {this.state.floor_plan_description_media}
+                    floor_plan_description_office =
+                        {this.state.floor_plan_description_office}
+                    floor_plan_description_open =
+                        {this.state.floor_plan_description_open}
+
+                    floor_plan_more_description_title_media =
+                        {this.state.floor_plan_more_description_title_media}
+                    floor_plan_more_description_title_office =
+                        {this.state.floor_plan_more_description_title_office}
+                    floor_plan_more_description_title_open =
+                        {this.state.floor_plan_more_description_title_open}
+
+                    floor_plan_more_description_media =
+                        {this.state.floor_plan_more_description_media}
+                    floor_plan_more_description_office =
+                        {this.state.floor_plan_more_description_office}
+                    floor_plan_more_description_open =
+                        {this.state.floor_plan_more_description_open}
+
+                    floor_plan_price_media = {this.state.floor_plan_price_media}
+                    floor_plan_price_office = {this.state.floor_plan_price_office}
+                    floor_plan_price_open = {this.state.floor_plan_price_open}
 
                     drawing_media = {this.state.drawing_media}
                     drawing_office = {this.state.drawing_office}
