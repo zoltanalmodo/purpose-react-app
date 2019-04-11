@@ -16,7 +16,6 @@ import searchresult_image_london_bridge
 import searchresult_image_bermondsey
     from './SearchResultsPanel/purpose-group-searchresult-bermondsey.png'
 
-
 import purpose_group_googlemapresult_bethnal_green
     from './purpose-group-googlemapresult-bethnal-green.png'
 import purpose_group_googlemapresult_london_bridge
@@ -64,9 +63,26 @@ import sr_gallery_bermondsey_006
     from './SearchResultsGallery/img/sr-gallery-bermondsey-006.png'
 
 
-import FloorPlanDrawing_drawing
-    from '../FloorPlanContainer/FloorPlanDrawing/purpose-group-FloorPlanDrawing.png'
+import FloorPlanDrawing_bethnal_green_media
+    from '../FloorPlanContainer/FloorPlanDrawing/FPDrawing-bethnal-green-media.png'
+import FloorPlanDrawing_bethnal_green_office
+    from '../FloorPlanContainer/FloorPlanDrawing/FPDrawing-bethnal-green-office.png'
+import FloorPlanDrawing_bethnal_green_open
+    from '../FloorPlanContainer/FloorPlanDrawing/FPDrawing-bethnal-green-open.png'
 
+import FloorPlanDrawing_london_bridge_media
+    from '../FloorPlanContainer/FloorPlanDrawing/FPDrawing-london-bridge-media.png'
+import FloorPlanDrawing_london_bridge_office
+    from '../FloorPlanContainer/FloorPlanDrawing/FPDrawing-london-bridge-office.png'
+import FloorPlanDrawing_london_bridge_open
+    from '../FloorPlanContainer/FloorPlanDrawing/FPDrawing-london-bridge-open.png'
+
+import FloorPlanDrawing_bermondsey_media
+    from '../FloorPlanContainer/FloorPlanDrawing/FPDrawing-bermondsey-media.png'
+import FloorPlanDrawing_bermondsey_office
+    from '../FloorPlanContainer/FloorPlanDrawing/FPDrawing-bermondsey-office.png'
+import FloorPlanDrawing_bermondsey_open
+    from '../FloorPlanContainer/FloorPlanDrawing/FPDrawing-bermondsey-open.png'
 
 class SearchResultsContainer extends React.Component {
     constructor(){
@@ -75,17 +91,19 @@ class SearchResultsContainer extends React.Component {
             // activeButtonTitle: '', // this is the active button
             title: 'Bethnal Green',
             Button_1: true,
-            googlemapresult_image: purpose_group_googlemapresult_bethnal_green,
             Button_2: false,
             Button_3: false,
+            googlemapresult_image: purpose_group_googlemapresult_bethnal_green,
             image_001: sr_gallery_bethnal_green_001,
             image_002: sr_gallery_bethnal_green_002,
             image_003: sr_gallery_bethnal_green_003,
             image_004: sr_gallery_bethnal_green_004,
             image_005: sr_gallery_bethnal_green_005,
             image_006: sr_gallery_bethnal_green_006,
-            floor_plan_description_title: `Bethnal Green MEDIA description title`,
-            floor_plan_description:
+//_media
+            floor_plan_description_title_media:
+                `Bethnal Green MEDIA description title`,
+            floor_plan_description_media:
                 `Bethnal Green MEDIA text text text text 
                 text text text text text text 
                 text text text text text text 
@@ -99,15 +117,72 @@ class SearchResultsContainer extends React.Component {
                 text text text text text text 
                 text text text text text text
                 text text.`,
-            floor_plan_more_description_title: `Bethnal Green MEDIA more description title`,
-            floor_plan_more_description:
+            floor_plan_more_description_title_media:
+                `Bethnal Green MEDIA more description title`,
+            floor_plan_more_description_media:
                 `Bethnal Green MEDIA more more more more more more
                 more more more more more more more
                 more more more more more more more
                 more more more more more more more
                 more more more.`,
-            floor_plan_price: `£ 18.500 / month MEDIA`,
-            drawing: FloorPlanDrawing_drawing,
+            floor_plan_price_media: `£ 18.500 / month MEDIA`,
+            drawing: FloorPlanDrawing_bethnal_green_media,
+//_office
+            floor_plan_description_title_office:
+                `Bethnal Green OFFICE description title`,
+            floor_plan_description_office:
+                `Bethnal Green OFFICE text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text
+                text text.`,
+            floor_plan_more_description_title_office:
+                `Bethnal Green OFFICE more description title`,
+            floor_plan_more_description_office:
+                `Bethnal Green OFFICE more more more more more more
+                more more more more more more more
+                more more more more more more more
+                more more more more more more more
+                more more more.`,
+            floor_plan_price_office: `£ 13.250 / month OFFICE`,
+            drawing: FloorPlanDrawing_bethnal_green_office,
+
+//_open
+            floor_plan_description_title_open:
+                `Bethnal Green OPEN description title`,
+            floor_plan_description_open:
+                `Bethnal Green OPEN text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text
+                text text.`,
+            floor_plan_more_description_title_open:
+                `Bethnal Green OPEN more description title`,
+            floor_plan_more_description_open:
+                `Bethnal Green OPEN more more more more more more
+                more more more more more more more
+                more more more more more more more
+                more more more more more more more
+                more more more.`,
+            floor_plan_price_open: `£ 9.750 / month OPEN`,
+            drawing: FloorPlanDrawing_bethnal_green_open,
+
         }
         // this.buttons = dummyData // array of button object data
     }
@@ -116,17 +191,19 @@ class SearchResultsContainer extends React.Component {
         this.setState({
             title: 'Bethnal Green',
             Button_1: true,
-            googlemapresult_image: purpose_group_googlemapresult_bethnal_green,
             Button_2: false,
             Button_3: false,
+            googlemapresult_image: purpose_group_googlemapresult_bethnal_green,
             image_001: sr_gallery_bethnal_green_001,
             image_002: sr_gallery_bethnal_green_002,
             image_003: sr_gallery_bethnal_green_003,
             image_004: sr_gallery_bethnal_green_004,
             image_005: sr_gallery_bethnal_green_005,
             image_006: sr_gallery_bethnal_green_006,
-            floor_plan_description_title: `Bethnal Green MEDIA description title`,
-            floor_plan_description:
+//_media
+            floor_plan_description_title_media:
+                `Bethnal Green MEDIA description title`,
+            floor_plan_description_media:
                 `Bethnal Green MEDIA text text text text 
                 text text text text text text 
                 text text text text text text 
@@ -140,15 +217,72 @@ class SearchResultsContainer extends React.Component {
                 text text text text text text 
                 text text text text text text
                 text text.`,
-            floor_plan_more_description_title: `Bethnal Green MEDIA more description title`,
-            floor_plan_more_description:
+            floor_plan_more_description_title_media:
+                `Bethnal Green MEDIA more description title`,
+            floor_plan_more_description_media:
                 `Bethnal Green MEDIA more more more more more more
                 more more more more more more more
                 more more more more more more more
                 more more more more more more more
                 more more more.`,
-            floor_plan_price: `£ 18.500 / month MEDIA`,
-            drawing: FloorPlanDrawing_drawing,
+            floor_plan_price_media: `£ 18.500 / month MEDIA`,
+            drawing: FloorPlanDrawing_bethnal_green_media,
+//_office
+            floor_plan_description_title_office:
+            `Bethnal Green OFFICE description title`,
+            floor_plan_description_office:
+            `Bethnal Green OFFICE text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text
+            text text.`,
+            floor_plan_more_description_title_office:
+            `Bethnal Green OFFICE more description title`,
+            floor_plan_more_description_office:
+            `Bethnal Green OFFICE more more more more more more
+            more more more more more more more
+            more more more more more more more
+            more more more more more more more
+            more more more.`,
+            floor_plan_price_office: `£ 13.250 / month OFFICE`,
+            drawing: FloorPlanDrawing_bethnal_green_office,
+
+//_open
+            floor_plan_description_title_open:
+                `Bethnal Green OPEN description title`,
+            floor_plan_description_open:
+                `Bethnal Green OPEN text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text
+                text text.`,
+            floor_plan_more_description_title_open:
+                `Bethnal Green OPEN more description title`,
+            floor_plan_more_description_open:
+                `Bethnal Green OPEN more more more more more more
+                more more more more more more more
+                more more more more more more more
+                more more more more more more more
+                more more more.`,
+            floor_plan_price_open: `£ 9.750 / month OPEN`,
+            drawing: FloorPlanDrawing_bethnal_green_open,
+
         })
     }
     changeColor_2(){
@@ -156,16 +290,18 @@ class SearchResultsContainer extends React.Component {
             title: 'London Bridge',
             Button_1: false,
             Button_2: true,
-            googlemapresult_image: purpose_group_googlemapresult_london_bridge,
             Button_3: false,
+            googlemapresult_image: purpose_group_googlemapresult_london_bridge,
             image_001: sr_gallery_london_bridge_001,
             image_002: sr_gallery_london_bridge_002,
             image_003: sr_gallery_london_bridge_003,
             image_004: sr_gallery_london_bridge_004,
             image_005: sr_gallery_london_bridge_005,
             image_006: sr_gallery_london_bridge_006,
-            floor_plan_description_title: `London Bridge MEDIA description title`,
-            floor_plan_description:
+//_media
+            floor_plan_description_title_media:
+                `London Bridge MEDIA description title`,
+            floor_plan_description_media:
                 `London Bridge MEDIA text text text text 
                 text text text text text text 
                 text text text text text text 
@@ -179,15 +315,70 @@ class SearchResultsContainer extends React.Component {
                 text text text text text text 
                 text text text text text text
                 text text.`,
-            floor_plan_more_description_title: `London Bridge MEDIA more description title`,
-            floor_plan_more_description:
+            floor_plan_more_description_title_media:
+                `London Bridge MEDIA more description title`,
+            floor_plan_more_description_media:
                 `London Bridge MEDIA more more more more more more
                 more more more more more more more
                 more more more more more more more
                 more more more more more more more
                 more more more.`,
-            floor_plan_price: `£ 14.000 / month MEDIA`,
-            drawing: FloorPlanDrawing_drawing,
+            floor_plan_price_media: `£ 14.000 / month MEDIA`,
+            drawing: FloorPlanDrawing_london_bridge_media,
+//_office
+            floor_plan_description_title_office:
+            `London Bridge OFFICE description title`,
+            floor_plan_description_office:
+            `London Bridge OFFICE text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text
+            text text.`,
+            floor_plan_more_description_title_office:
+            `London Bridge OFFICE more description title`,
+            floor_plan_more_description_office:
+            `London Bridge OFFICE more more more more more more
+            more more more more more more more
+            more more more more more more more
+            more more more more more more more
+            more more more.`,
+            floor_plan_price_office: `£ 12.500 / month OFFICE`,
+            drawing: FloorPlanDrawing_london_bridge_office,
+//_open
+            floor_plan_description_title_open:
+            `London Bridge OPEN description title`,
+            floor_plan_description_open:
+            `London Bridge OPEN text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text 
+            text text text text text text
+            text text.`,
+            floor_plan_more_description_title_open:
+            `London Bridge OPEN more description title`,
+            floor_plan_more_description_open:
+            `London Bridge OPEN more more more more more more
+            more more more more more more more
+            more more more more more more more
+            more more more more more more more
+            more more more.`,
+            floor_plan_price_open: `£ 11.200 / month OPEN`,
+            drawing: FloorPlanDrawing_london_bridge_open,
             
         })
     }
@@ -204,8 +395,10 @@ class SearchResultsContainer extends React.Component {
             image_004: sr_gallery_bermondsey_004,
             image_005: sr_gallery_bermondsey_005,
             image_006: sr_gallery_bermondsey_006,
-            floor_plan_description_title: `Bermondsey MEDIA description title`,
-            floor_plan_description:
+//_media
+            floor_plan_description_title_media:
+                `Bermondsey MEDIA description title`,
+            floor_plan_description_media:
                 `Bermondsey MEDIA text text text text 
                 text text text text text text 
                 text text text text text text 
@@ -219,15 +412,72 @@ class SearchResultsContainer extends React.Component {
                 text text text text text text 
                 text text text text text text
                 text text.`,
-            floor_plan_more_description_title: `Bermondsey MEDIA more description title`,
-            floor_plan_more_description:
+            floor_plan_more_description_title_media:
+                `Bermondsey MEDIA more description title`,
+            floor_plan_more_description_media:
                 `Bermondsey MEDIA more more more more more more
                 more more more more more more more
                 more more more more more more more
                 more more more more more more more
                 more more more.`,
-            floor_plan_price: `£ 11.300 / month MEDIA`,
-            drawing: FloorPlanDrawing_drawing,
+            floor_plan_price_media: `£ 3.300 / month MEDIA`,
+            drawing: FloorPlanDrawing_bermondsey_media,
+//_office
+            floor_plan_description_title_office:
+                `Bermondsey OFFICE description title`,
+            floor_plan_description_office:
+                `Bermondsey OFFICE text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text
+                text text.`,
+            floor_plan_more_description_title_office:
+                `Bermondsey OFFICE more description title`,
+            floor_plan_more_description_office:
+                `Bermondsey OFFICE more more more more more more
+                more more more more more more more
+                more more more more more more more
+                more more more more more more more
+                more more more.`,
+            floor_plan_price_office: `£ 2.750 / month OFFICE`,
+            drawing: FloorPlanDrawing_bermondsey_office,
+//_open
+            floor_plan_description_title_open:
+                `Bermondsey OPEN description title`,
+            floor_plan_description_open:
+                `Bermondsey OPEN text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text 
+                text text text text text text
+                text text.`,
+            floor_plan_more_description_title_open:
+                `Bermondsey OPEN more description title`,
+            floor_plan_more_description_open:
+                `Bermondsey OPEN more more more more more more
+                more more more more more more more
+                more more more more more more more
+                more more more more more more more
+                more more more.`,
+            floor_plan_price_open: `£ 1.500 / month OPEN`,
+            drawing: FloorPlanDrawing_bermondsey_open,
+
+
         })
     }
 
