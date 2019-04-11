@@ -42,7 +42,14 @@ export default class FloorPlanPanel extends Component {
 
         let Button_Media_class = this.state.Media ? "activeButton" : "passiveButton";
         let Button_Office_class = this.state.Office ? "activeButton" : "passiveButton";
-        let Button_Open_class = this.state.Open ? "activeButton" : "passiveButton";  
+        let Button_Open_class = this.state.Open ? "activeButton" : "passiveButton";
+        
+        let floor_plan_description_title_conditional =
+            this.state.Media ? this.props.floor_plan_description_title_media
+            : this.state.Office ? this.props.floor_plan_description_title_office
+            : this.state.Open ? this.props.floor_plan_description_title_open
+            : null;
+
 
         return (
             <div className='FloorPlanPanel'>
@@ -74,7 +81,7 @@ export default class FloorPlanPanel extends Component {
 
                 <FloorPlanPanelText
                     floor_plan_description_title =
-                        {this.props.floor_plan_description_title}
+                        {floor_plan_description_title_conditional}
                     floor_plan_description =
                         {this.props.floor_plan_description}
                     floor_plan_more_description_title =
