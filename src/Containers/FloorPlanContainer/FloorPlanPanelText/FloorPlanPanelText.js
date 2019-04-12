@@ -16,9 +16,17 @@ export default function FloorPlanPanelText(props) {
                 <br></br>
                 {props.floor_plan_more_description}
             </p>
+
             <div className='FloorPlanPanelPrice'>
-                <h1>{props.floor_plan_price}</h1>
+                <h1>{props.floor_plan_price}</h1>              
             </div>
+
+            <div className='FloorPlanContactButton'>
+                <button type="submit">Contact</button>
+            </div>
+            
         </div>
+
+        
     )
 }

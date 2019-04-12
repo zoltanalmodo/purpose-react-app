@@ -132,6 +132,8 @@ class FloorPlanContainer extends Component {
                         {floor_plan_price_conditional}
                 />
                 
+                
+
             </div>
 
                 <FloorPlanDrawing
