@@ -53,7 +53,8 @@ class FloorPlanContainer extends Component {
         let button_open_class =
             this.state.open ? "activeButton" : "passiveButton"
         
-            //.....comment
+        // let floor_plan_description_title =
+        // this.props[`floor_plan_description_${this.state.selectedPanel}`]
 
         let floor_plan_description_title_conditional =
             this.state.media ? this.props.floor_plan_description_title_media
@@ -61,7 +62,8 @@ class FloorPlanContainer extends Component {
             : this.state.open ? this.props.floor_plan_description_title_open
             : null
 
-        // let floor_plan_description_title = this.props[`floor_plan_description_${this.state.selectedPanel}`]
+
+
         let floor_plan_description_conditional =
             this.state.media ? this.props.floor_plan_description_media
             : this.state.office ? this.props.floor_plan_description_office
@@ -139,8 +141,6 @@ class FloorPlanContainer extends Component {
                         {floor_plan_price_conditional}
                 />
                 
-                
-
             </div>
 
                 <FloorPlanDrawing
@@ -151,20 +151,21 @@ class FloorPlanContainer extends Component {
     }
 }
 
-const FloorPlanPanelSelector = ({selectedPlanType, selectFloorPlan}) => (
-    <div className='FloorPlanPanelSelector'>
-        {['media', 'office', 'open'].map((panel, index) =>
-            <PanelSelectButton
-                key={index}
-                panel={panel}
-                selectedPlanType={selectedPlanType}
-                selectFloorPlan={() => selectFloorPlan(panel)}
-            />)
-        }
-    </div>
-)
+// const FloorPlanPanelSelector = ({selectedPlanType, selectFloorPlan}) => (
+//     <div className='FloorPlanPanelSelector'>
+//         {['media', 'office', 'open'].map((panel, index) =>
+//             <PanelSelectButton
+//                 key={index}
+//                 panel={panel}
+//                 selectedPlanType={selectedPlanType}
+//                 selectFloorPlan={() => selectFloorPlan(panel)}
+//             />)
+//         }
+//     </div>
+// )
 
-const PanelSelectButton = ({panel, selectedFloorPlan, selectFloorPlan}) =>
-    <button className={`panel-select-button ${selectedFloorPlan === panel ? 'active' : ''}`}>{panel}</button>
+// const PanelSelectButton = ({panel, selectedFloorPlan, selectFloorPlan}) =>
+//     <button className={`panel-select-button ${selectedFloorPlan === panel ? 'active'
+//         : ''}`}>{panel}</button>
 
 export default FloorPlanContainer;
