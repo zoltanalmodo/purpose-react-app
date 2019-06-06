@@ -1,6 +1,6 @@
 import React from 'react';
 
-import AliceCarousel from 'react-alice-carousel'
+import AliceCarousel from 'react-alice-carousel/lib/react-alice-carousel.js'
 import 'react-alice-carousel/lib/alice-carousel.css'
 
 import image_001 from './images/home-slider-001.jpg';
